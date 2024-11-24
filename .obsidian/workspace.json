@@ -51,12 +51,14 @@
             "id": "53ce233430ad244b",
             "type": "leaf",
             "state": {
-              "type": "release-notes",
+              "type": "markdown",
               "state": {
-                "currentVersion": "1.7.5"
+                "file": "Chemie/Physikalische_Chemie/VU_Festkörper/Mitschriften/Chapter 6 Heat Capacity.md",
+                "mode": "source",
+                "source": false
               },
               "icon": "lucide-file",
-              "title": "Release Notes 1.7.5"
+              "title": "Chapter 6 Heat Capacity"
             }
           }
         ],
@@ -203,6 +205,9 @@
   },
   "active": "53ce233430ad244b",
   "lastOpenFiles": [
+    "Pasted image 20241124084308.png",
+    "Chemie/Physikalische_Chemie/VU_Festkörper/Mitschriften/Chapter 6 Heat Capacity.md",
+    "Chemie/Physikalische_Chemie/VU_Festkörper/Mitschriften/VO_2_Meinschad.md",
     "MD-Part.md",
     "Chemie/TC/Praktikum_FF",
     "Chemie/TC",

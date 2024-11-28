@@ -60,9 +60,23 @@
               "icon": "lucide-file",
               "title": "Chapter 6 Heat Capacity"
             }
+          },
+          {
+            "id": "2e9314982f6334ee",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Chemie/Physikalische_Chemie/VU_Festkörper/Skript_Lukas/Chapter 1 Crystal Systems.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Chapter 1 Crystal Systems"
+            }
           }
         ],
-        "currentTab": 3
+        "currentTab": 4
       }
     ],
     "direction": "vertical"
@@ -118,7 +132,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "635e6bd2927d61a8",
@@ -203,9 +218,23 @@
       "command-palette:Befehlspalette öffnen": false
     }
   },
-  "active": "53ce233430ad244b",
+  "active": "2e9314982f6334ee",
   "lastOpenFiles": [
-    "Pasted image 20241124084308.png",
+    "atta/Pasted image 20241128144130.png",
+    "atta/Pasted image 20241128143822.png",
+    "atta/Pasted image 20241128143738.png",
+    "Tutorium Mathe/~$Tutorium5_Slides.pptx",
+    "atta/Pasted image 20241128142751.png",
+    "atta/Pasted image 20241128142724.png",
+    "atta/Pasted image 20241128142227.png",
+    "atta/Pasted image 20241128142102.png",
+    "atta/Pasted image 20241128141928.png",
+    "atta/Pasted image 20241128141603.png",
+    "Chemie/Physikalische_Chemie/VU_Festkörper/Skript_Lukas/Chapter 1 Crystal Systems.md",
+    "atta",
+    "attachments/Pasted image 20241124084308.png",
+    "Chemie/Physikalische_Chemie/VU_Festkörper/Skript_Lukas",
+    "attachments",
     "Chemie/Physikalische_Chemie/VU_Festkörper/Mitschriften/Chapter 6 Heat Capacity.md",
     "Chemie/Physikalische_Chemie/VU_Festkörper/Mitschriften/VO_2_Meinschad.md",
     "MD-Part.md",

@@ -69,6 +69,50 @@ The simple cubic system is rare because it is an inefficient way to pack the sph
 
 ![[Pasted image 20241128144130.png]]
 
+#### Body centered cubic
+
+The body centered cubic is a simple cubic with an additional cell in the center of the cube
+
++ 2 lattice point per unit cell with volume $a^3/2$ 
++ Number of nearest neighbours: 8
++ Nearest neighbour distance = 0.866a
++ Packing fraction = $\sqrt{3} \pi / 8 = 0.68
+
+Primitive lattice is defined by the three translation vectors
+
++ $a_1 = 0.5 * (x+y-z)$ 
++ $a_2 = 0.5 * (-x+y+z)$
++ $a_3 = 0.5 *(x - y + z)$ 
+
+![[Pasted image 20241128144459.png]]
+
+### Face centered cubic
+
+Simple cubic lattice with an additional point on the center of each plane
+
++ fcc has 4 lattice points per unit cell with a volume of $a^3/4$
++ Number of nearest neighbours = 12
++ Nearest neighbour distance = 0.707a
++ Packing fraction = $\sqrt{2} \pi / 6 \approx 0.74$ 
+
+![[Pasted image 20241128144810.png]]
+
+Thus we can define the translation vectors:
+
++ $a_1 = 0.5 * (x+ y)$
++ $a_2 = 0.5*(y+ z)$
++ $a_3 = 0.5*(x+z)$ 
+
+### Sphere packing
+
+> In euclidean space, the densest packing of equal spheres is achieved by a family of structures called close packed structures.
+
+![[Pasted image 20241128145138.png]]
+
+Thus the face centered cubic is build up by the ABCABC sequence and the ABAB structure gives the HCP
+
+The packing fraction in this case is 0.74
+
 
 
 

@@ -47,6 +47,18 @@ For stable crystal this Madelung constant needs to be positive.
 
 ![[Pasted image 20241128200811.png]]
 
+#### Further descriptions
+
+![[Pasted image 20241201102658.png]]
+
+This figure shows the Coloumbic Madelung energy and the repulsive interactions. One can see the total energy as a sum of both the interactions.
+
+
+So what does the Madelung constant tell us
+
+$\lambda = \sum_{j \neq i } \frac{±}{p_{ij}}$ 
+
+This is used to determine the electrostatic potential of a single ion in a crystal by approximating the ions by point charges
 ### Covalent Crystals
 
 > The covalent bond is a strong bond, usually formed from two electrons, these tend to be partially localized in the region between the two atoms, the spin is antiparallel.
@@ -63,6 +75,18 @@ When the electron is shared it is delocalized over two position, thus in a box s
 $E_{bonding} = \frac{\hbar^2 \pi^2}{2m(2L)^2}$ 
 
 The new ground state orbital is known as the bonding orbital.
+
+![[Pasted image 20241201103017.png]]
+
+> It is important by the Pauli-Principle that the electrons in the bonding orbital differ in spin
+
+#### Why does no covalent $He_2$ exist?
+
+In a $He$ each atom has two electrons, thus two of the four electrons must occupy a excited anti-bonding orbital having the same energy as the original ground state of the atoms. So there is no net energy gain
+
+![[Pasted image 20241201103215.png]]
+
+
 
 #### Molecular Orbital or Tight binding theory
 

@@ -20,6 +20,13 @@ $R = n_1a_1 + n_2a_2 + n_3a_3$
 
 to every point of the space lattice the basis then gets added this is our crystal structure
 
+
+### Differences between unit cells
+
++ Unit cell: a repeating unit in a crystal
+	+ Primitive unit cell: a unit cell containing only a single lattice point
+	+ Conventional unit cell: A unit cell with more than one lattice point often used for more easier calculations
+	+ Wigner-Seitz Cell: A construction to yield a primitive unit cell
 ### Wigner-Seitz cell
 
 >A Wigner–Seitz cell is an example of a [primitive cell](https://en.wikipedia.org/wiki/Primitive_cell "Primitive cell"), which is a [unit cell](https://en.wikipedia.org/wiki/Unit_cell "Unit cell") containing exactly one lattice point. For any given lattice, there are an infinite number of possible primitive cells. However there is only one Wigner–Seitz cell for any given lattice. It is the [locus](https://en.wikipedia.org/wiki/Locus_(mathematics) "Locus (mathematics)") of points in space that are closer to that lattice point than to any of the other lattice points.

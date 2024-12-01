@@ -32,6 +32,8 @@ $-M\omega^2 u_s = C(u_{s+1}+u_{s-1}-2u_s)$
 
 ![[Pasted image 20241128203921.png]]
 
+> Central here is the dispersion relation
+
 + One can see that the slope of $\omega(K)$ is zero at the BZ boundaries: $\sin(\pi /2)$ 
 
 ![[Pasted image 20241128204021.png]]

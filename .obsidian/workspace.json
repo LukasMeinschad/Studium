@@ -67,16 +67,44 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Chemie/Physikalische_Chemie/VU_Festkörper/Skript_Lukas/Chapter 6 Heat capacity.md",
+                "file": "Chemie/Physikalische_Chemie/VU_Festkörper/Skript_Lukas/Chapter 4 Crystal Binding.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Chapter 6 Heat capacity"
+              "title": "Chapter 4 Crystal Binding"
+            }
+          },
+          {
+            "id": "bea7000a1f2bc75e",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Chemie/Physikalische_Chemie/VU_Festkörper/Skript_Lukas/Chapter 10 Dielectric function of the free electron gas.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Chapter 10 Dielectric function of the free electron gas"
+            }
+          },
+          {
+            "id": "f37a2febe6e7fc5f",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Chemie/Physikalische_Chemie/VU_Festkörper/Skript_Lukas/Addition to the nearly free energy model.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Addition to the nearly free energy model"
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 6
       }
     ],
     "direction": "vertical"
@@ -217,25 +245,34 @@
       "command-palette:Befehlspalette öffnen": false
     }
   },
-  "active": "2e9314982f6334ee",
+  "active": "f37a2febe6e7fc5f",
   "lastOpenFiles": [
-    "atta/Pasted image 20241128212907.png",
-    "atta/Pasted image 20241128212715.png",
-    "atta/Pasted image 20241128212350.png",
-    "atta/Pasted image 20241128212229.png",
-    "atta/Pasted image 20241128211946.png",
-    "Chemie/Physikalische_Chemie/VU_Festkörper/Skript_Lukas/Chapter 5 Phonons.md",
+    "atta/Pasted image 20241201115052.png",
+    "Chemie/Physikalische_Chemie/VU_Festkörper/Skript_Lukas/Alternative Description Free Electron Model.md",
+    "Chemie/Physikalische_Chemie/VU_Festkörper/Skript_Lukas/Addition to the nearly free energy model.md",
+    "atta/Pasted image 20241201114521.png",
+    "atta/Pasted image 20241201114411.png",
+    "atta/Pasted image 20241201114317.png",
+    "atta/Pasted image 20241201114207.png",
+    "atta/Pasted image 20241201113836.png",
+    "atta/Pasted image 20241201113811.png",
+    "atta/Pasted image 20241201113603.png",
+    "atta/Pasted image 20241201112310.png",
     "Chemie/Physikalische_Chemie/VU_Festkörper/Skript_Lukas/Chapter 6 Heat capacity.md",
-    "atta/Pasted image 20241128205949.png",
-    "atta/Pasted image 20241128205932.png",
-    "atta/Pasted image 20241128205848.png",
-    "atta/Pasted image 20241128205803.png",
-    "atta/Pasted image 20241128205634.png",
-    "atta/Pasted image 20241128205137.png",
+    "Chemie/Physikalische_Chemie/VU_Festkörper/Skript_Lukas/Chapter 5 Phonons.md",
+    "Chemie/Physikalische_Chemie/VU_Festkörper/Skript_Lukas/Chapter 11 Semiconductors.md",
+    "Chemie/Physikalische_Chemie/VU_Festkörper/Skript_Lukas/Revision Crystal Systems X-Ray.md",
     "Chemie/Physikalische_Chemie/VU_Festkörper/Skript_Lukas/Chapter 4 Crystal Binding.md",
+    "atta/Pasted image 20241201103215.png",
+    "atta/Pasted image 20241201103017.png",
     "Chemie/Physikalische_Chemie/VU_Festkörper/Skript_Lukas/Chapter 2 Reciprocal Lattice.md",
-    "Tutorium Mathe/~$Tutorium5_Slides.pptx",
     "Chemie/Physikalische_Chemie/VU_Festkörper/Skript_Lukas/Chapter 1 Crystal Systems.md",
+    "Chemie/Physikalische_Chemie/VU_Festkörper/Skript_Lukas/Chapter 10 Dielectric function of the free electron gas.md",
+    "Chemie/Physikalische_Chemie/VU_Festkörper/Skript_Lukas/Chapter 9 Energy Bands.md",
+    "Chemie/Physikalische_Chemie/VU_Festkörper/Skript_Lukas/Chapter 8 Free Electron Fermi Gas.md",
+    "Chemie/Physikalische_Chemie/VU_Festkörper/Skript_Lukas/Chapter 7 Anharmonic Crystal Interactions.md",
+    "Chemie/Physikalische_Chemie/VU_Festkörper/Skript_Lukas/Chapter 6 Heat capacity.pdf",
+    "Tutorium Mathe/~$Tutorium5_Slides.pptx",
     "atta",
     "Chemie/Physikalische_Chemie/VU_Festkörper/Skript_Lukas",
     "attachments",

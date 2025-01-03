@@ -1,4 +1,4 @@
-![[Pasted image 20241201115052.png]]
+ ![[Pasted image 20241201115052.png]]
 
 + The band structure of a crystal can be explained with the nearly free electron model where the band electrons are perturbed only weakly by the periodic potential of the ion cores
 

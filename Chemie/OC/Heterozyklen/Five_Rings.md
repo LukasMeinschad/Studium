@@ -196,3 +196,123 @@ Favored is first the substitution of the enamine then the condensation
 
 ![679250806390012b3e27f59aa5476900.png](./679250806390012b3e27f59aa5476900.png)
 
+## Benzofuran and Benzothiophene
+
+### Synthesis Stragegies
+
+#### Perkin Rearrangement
+
+> From Coumarin via electrophilic addition of $Br_2$, Opening with KOH and elemination
+
+![53629cb16363d983f79331758fa16fed.png](./53629cb16363d983f79331758fa16fed.png)
+
+#### Dehydration Reactions
+
+> Dehydration of Carbonyls with Acid
+
+![f5ebb3eb9be2be4aad5209732dc151db.png](./f5ebb3eb9be2be4aad5209732dc151db.png)
+
+#### Palladium and Wittig Type
+
+![87a3f01d7b75e4d698506e35fc506ffd.png](./87a3f01d7b75e4d698506e35fc506ffd.png)
+
+## Benzotriazole, Benzimidazole, Benzothiazole
+
+These are the Coupling Reagents
+
+![63ea3a1218b7308c0a0fd0d3b44454dc.png](./63ea3a1218b7308c0a0fd0d3b44454dc.png)
+
+### Benzotriazole Synthesis
+
+> Through a Aza-Self Coupling
+
+![7cca8bf7ae7f6ebf22e46a2a350cef9e.png](./7cca8bf7ae7f6ebf22e46a2a350cef9e.png)
+
+### Benzimidazole Synthesis
+
+> Coupling with an Acid first substitution then formation of an imine
+
+![496fd9515a538556883541a2d61781d9.png](./496fd9515a538556883541a2d61781d9.png)
+
+### Hydroxybenzotriazole Synthesis
+
+> Nucleophilic Aromatic Substitution with Hydrazine, then Condensation
+
+
+![47c8563602447bdbaf4442d6281e5a30.png](./47c8563602447bdbaf4442d6281e5a30.png)
+
+### Benzothiazole Synthesis
+
+> Coupling with Acid then Imine Formation
+
+![991d134ecf8673480329dd829ba587b1.png](./991d134ecf8673480329dd829ba587b1.png)
+
+### Coupling Reaction of Amino Acids
+
+![bb7c35e7c36d842d3c3939890a2ea6f7.png](./bb7c35e7c36d842d3c3939890a2ea6f7.png)
+
+Problem of Amino Acid Coupling is often that a azlactone is formed which leads to racemization of the Residue
+
+![d1c8733b737637320082fe3572894513.png](./d1c8733b737637320082fe3572894513.png)
+
+### Julia Olefination
+
+> Synthesis of E Alkenes
+
+![ef6e085b942960d8bd4a8e368f404a69.png](./ef6e085b942960d8bd4a8e368f404a69.png)
+
+## Triazole and Tetrazole
+
+![2a33b71b528a3b0fcc0d132a549135e1.png](./2a33b71b528a3b0fcc0d132a549135e1.png)
+
+> The more nitrogen the more decrease in pKa value. The lower the $pKa$ the more easily the proton is removed.
+
+### Synthesis
+
+![e13c9acbf8599e4c6959e0f59221e07b.png](./e13c9acbf8599e4c6959e0f59221e07b.png)
+
+### Dediazotation Reacton
+
+![ed4c0cc4765d23df70e94c7fb82cff75.png](./ed4c0cc4765d23df70e94c7fb82cff75.png)
+
+### Conversion of Carboxylic Acids to tetrazoles
+
+![bad1374226c614acb6a27820c0252981.png](./bad1374226c614acb6a27820c0252981.png)
+
+## Oxazole, Thiazole and Imidazole
+
+![8730bce58c431e42101f61ab261a7532.png](./8730bce58c431e42101f61ab261a7532.png)
+
+
+### TosMic Azole Synthesis
+
++ Imines = 1,3 imidazole
++ Aldehydes = 1,3 oxazole
+
+![8ccd4dd53b47a28fe7b263cdbaed0a66.png](./8ccd4dd53b47a28fe7b263cdbaed0a66.png)
+
+### Hantzsch Thiazole Synthesis
+
+$\alpha$ haloketone toghether with Thioamid
+
+![9d94cd339f3cfd3f49c6c473def5b80d.png](./9d94cd339f3cfd3f49c6c473def5b80d.png)
+
+### Nitrile Oxide Cycloadditions
+
+![5f620e09766882bc2e2ef3e545b9bb77.png](./5f620e09766882bc2e2ef3e545b9bb77.png)
+
+### Conforth Rearrangement
+
+![a1114edd36670f3f684ce139caf3e4dc.png](./a1114edd36670f3f684ce139caf3e4dc.png)
+
+
+### Erlenmeyer-Plöchl Azlactone
+
+![80415d0f0ff36965ad5bb2410e050c30.png](./80415d0f0ff36965ad5bb2410e050c30.png)
+
+### Barton McCombie Reaction
+
+![6c4a9e1897ff4ae9ba9232f4fd205477.png](./6c4a9e1897ff4ae9ba9232f4fd205477.png)
+
+
+![6b0cca4c1925223ed0ef63fc1e1da297.png](./6b0cca4c1925223ed0ef63fc1e1da297.png)

@@ -185,7 +185,162 @@ $O + O_2 \to O_3$
 
 **Zur UV Strahlung**
 
+Extrem kurzwelliges UV (10-100nm) wird durch Stickstoff gefilterd. Ausgehend von der Wellenlänge hat man drei Kategorien:
 
++ UV-A (400-315 nm)
++ UV-B (315-280 nm)
++ UV-C (280-100 nm)
+
+UV-C wird durch Sauerstoff (<200 nm) und durch Ozone (> 200 nm) ausgefiltert in 35 km Höhe.
+UV-B wird durch teilweise gefiltert macht normalerweise den Sonnenbrand
+UV-A ist transparent für die Ozonschicht
+
+### Troposphäre
+
+#### Welche 3 Faktoren müssen zusammentreffen, damit es zu Sommersmog kommt? Wodurch unterscheiden sich Sommersmog von Wintersmog?
+
+> Sommersmog wird auch als photochemischer Smog bezeichnet
+
+ 1. Hohe Temperaturen
+     1. Hohe Temperaturen über 25 °C fördern Reaktionen die zur Bildung von bodennahem Ozon führen.
+2. Hohe Sonneinstrahlung
+    1. UV Licht spaltet Stickstoffoxide ($NO_2$) in Stickstoffmonoxid und freiem Sauerstoff ($O$). Dieses Sauerstoff kann dann mit molekularen Sauerstoff ($O_2$) zur Bildung bon Ozon $O_3$ beitragen
+3. Vorhandensein von Vorläufscherschadstoffen
+    1. Stickoxide und flüchtige organische Verbindungen (VOCs) müssen in ausreichender Menge vorhandensein
+  
+Unterschied von Sommersmog und Wintersmog:
+
++ Sommersmog wird durch photochemische Reaktionen verursacht wo Stickoxide und VOCs in Kombination mit Sonnenlicht Ozon und andere Schadstoffe bilden. Hohe Temperaturen sind hierzu notwendig Sommersmog ist Ozonbasiert
++ Wintersmog entsteht durch die Ansammlung von $SO_2$, Feinstaub und Stickoxide bei niedrigen Temperaturen und hoher Luftfeuchtigkeit. Da warme Luftschichten von kälteren Umschlossenwerden kommt es zur Inversionswetterlage welche den Luftaustausch verhindert
+
+**Chemie**
+
++ Entstehnung von Ozon: $O + O_2 + M \to O_3 + M$ und $O_3 + NO \to NO_2 + O_2$
++ Am frühen Morgen: $NO_2 + hv (\lambda < 420nm) \to NO + O$
++ Vormittag: Entstehung von Organischen Radikalen $RH + O \to R^*$
++ Nachmittag: Bildung von Hydroxyl-Radikalen $H_2O + O \to 2HO^*$
+
+#### Welchen EInfluss hat NaCl-Aerosol auf die Nukleation von Wassertröpfchen in einem feuchten Gas? Erläutern Sie den Effekt anhand einer Skizze (Tröpfchenradius vs relative Feuchte) jeweils mit und ohne Einfluss von NaCl
+
+> Salzpartikel haben die Fähigkeit als Kondensationskerne zu fungieren, was die Bildung bon Wassertröpfchen bei einer geringen relativen Feuchtigkeit ermöglicht.
+
+
+![55fe1bc10c4f2f77e5b7b20673b56854.png](./55fe1bc10c4f2f77e5b7b20673b56854.png)
+
+
+**Reines Wasser**
+
+Für Reines Wasser muss die relative Feuchte über 100 % liegen damit Wassertröpfchen aus der Gasphase Kondensieren. Ohne NaCl braucht es also eine Übersättigung um Stabile Tröpfchen zu bilden
+
+**Zugabe von NaCl**
+
+Mit Steigender NACL Menge verschiebt sich die Kurve nach Links unten es bilden sich also schon viel früher Tröpfchen. Beispielsweise kann mit $10^{-16}$g NaCl bereits bei einer Luftfeuchtigkeit von 80 % ein Wassertropfen entstehen
+
+#### Aus welchen Vorläufer-Molekülen entsteht das OH-Radikal in Bodennähe
+
+> Das OH Radikal entsteht in der Troposphäre aus Ozon und Wassermolekülen durch UV strahlung und ist ein Waschmittel der Atmosphäre
+
+Aus Ozon:
+
++ Spaltung: $O_3 + hv \to O_2 + O$
++ Dann Reaktion mit Wasserdampf $O + H_2O \to 2 OH$
+
+Aus Stickstoffoxid:
+
++ Spaltung $NO_2 + hv \to NO + O$
++ Dann Reaktion mit Wasserdampf $NO_2 + hv \to NO + O$
+
+Aus Wasserstoffperoxid:
+
++ $H_2O_2 + hv \to 2 OH$
+
+#### Ab welchem pH Wert spricht man von "saurem" Regen? Welche Säuren sind in sauren Regentropfen typischerweise enthalten?
+
+> Als sauren Regen bezeichnet man einen Niederschlag, dessen pH-Wert bei etwa 4,2-4,8 liegt und damit niedriger als 5,5 - 5,7 was das reine Regenwasser durch den CO gehalt in der Atmosphäre hat
+
+Normalerwese Schwefelige Säure ($H_2SO_3)$ und Schwefelsäure ($H_2SO_4)$:
+
++ $SO_2 + H_2O \to H_2SO_3$
++ $SO_3 + H_2O \to H_2SO_4$
+
+Weiteres aus salpetrige Säure ($HNO_2)$ und Salpetersäure ($HNO_3)$ aus den Stickoxiden
+
++ $2 NO_2 + H_2O \to HNO_2 + HNO_3$
++ $N_2O_4 + H_2O \to HNO_2 + HNO_3$
+
+#### Nennen Sie die vier Abbaumechanismen von Molekülen in der Atmosphäre
+
+1. Photolyse
+
+Moleküle werden durch die Absorption von Sonnenlicht in kleinere Bestandteile zerlegt, dabei werden chemische Bindungen gebrochen zb Ozon
+
+$O_3 + hv \to O_2 + O$
+
+2. Reaktion mit Radikalen (OH und $NO_3$)
+
+3. Feuchte Abscheidung
+
+4. Trockene Abscheidung
+
+??
+
+#### Nennen SIe drei verschiedene Typen von Wolken in der Troposphäre
+
+![52a468ef056c22b1fb85a800fa404f71.png](./52a468ef056c22b1fb85a800fa404f71.png)
+
++ Cumulonimbus: Stark vertikal mit einen Amboss an der Spitze die Gewitterwolke
++ Nimbostratus: Sehr hoch bei 7000m und klassich ausgedehnt
++ Cirrus: Seht hoch gelegen >7000 m ausschließlich Eis
+
+#### Unter welchen Bedingungen werden Wolken oberhalb der Tropopause beobachtet? Bennen Sie auch diese Wolken
+
+> DIe Lage der Tropopause bei 15 km Höhe ist erkennbar da es fast keine Wolken mehr gibt und es gibt in der Flugfahrt eine fantastische Fernsicht.
+
+Besonders heftige AUfwinde lassen manche Gewitter über die Tropopause hinausschießen und Tragen den Eisschirm den Amboss mit geringen Mengen an gefrorenen Wasser bis unter die Stratosphäre.
+
+Zudem:
+
++ Perlmutwolken (PSCs) werden wie oben in den Polarregionen durch Kondensation von Schwefel und Salpertersäure gebildet
++ Schimmerndes Aussehen da sie das Sonnenlicht in verschiedenen Farben brechen
++ Leuchtende Nachtwolken (Polare Mesosphärenwolken NLC) bilden sich in der Mesosphäre bei 80 - 85 km Höhe. Sind kurz nach oder Vor Sonnenaufgang sichtbar und bestehen aus kleinen Staubpartikeln
+
+### Ionosphäre
+
+#### Welcher Fundamentaler Prozess verursacht allgemein die Farben, die wir als "Polarlichter" beobachten können? Zeichnen SIe das Termschema um konkret die intensive Grüne Linie bei 558 nm zu erklären
+
+> Fundamentaler Prozess ist die Anregung von Atomen und Molekülen durch den Beschuss mit Elektronen aus einen Sonnenwind. Diese Elektronen übertragen Energie auf die Atome der Atmosphäre zb $O_2$ und Stickstoff und emittieren dan Photonen
+
+Das Licht bei 558 nm entsteht durch den Übergang eines Sauerstoffatoms
+
+
+![88e27a422c9f9a5f2b0f7ad0d4613946.png](./88e27a422c9f9a5f2b0f7ad0d4613946.png)
+
+Die beiden Singlett Zustände des Sauerstoffs unterscheiden sich dadurch ob die Elektronen in einem $\pi^*$ $^1\Delta_g$ oder in beiden $\pi^*$ $^1\Sigma_g$ befinden
+
+Grunde genommen geht man von einen Angeregten zustand $^1S$ (Singlett) zurück in einen Grundzustand ($^1D)$ und macht dabei einen Übergang von 558 nm
+
+#### Aus welchen Grund ist die Zahl der freien Elektronen in etwa 200-250 km Höhe maximal? Warum ist die Zahl der Elektronen in 500 km sowie in 100 km Höhe geringer?
+
+
+1. Maximale Ionisation in 200-250 km Höhe:
+	
+    + Intensive UV und Röngtenstrahlung der Sonne trifft auf Stickstoff $N_2$ und Sauerstoff $U-2$
+    + Atmosphärendichte hier hoch genug damit eine effiziente Ionisierung stattfindet
+    + Rekombinationsrate relativ gering da die Dichte in Vergleich zu niedrigen Höhen bereits abgenommen hat
+
+2. Weniger Elektronen in 100 km Höhe:
+
+	+ In einer Höhe von 100 km ist die Dichte sehr viel höher, damit kommt es zu einer höheren Rekombinationsrate sprich die freien Elektronen werden wieder eingefangen
+  
+ 3. Weniger Elektronen in 500 km Höhe:
+
+	+ Hier gibt es einfach wenig Teilchen welche Ionisiert werden können das bewirkt diesen Effekt
+   
+#### Erläutern Sie die wichtigsten Merkmale der D,E und F-Schichten der Ionosphäre
+
+> Innerhalb der Ionosphäre exestieren drei lokale Ionisationsmaxima, weswegen siein drei Bereiche unterteilt wird: Die $D, E$ und $F$ Schichten.
+
+D-Schicht:
 
 
 

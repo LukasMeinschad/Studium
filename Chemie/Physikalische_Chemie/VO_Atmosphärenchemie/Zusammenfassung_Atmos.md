@@ -457,3 +457,101 @@ Mechanismus durch Harold D. Johnston, Paul Crutzen ..
 
 ## Kapitel 8 Chemie der Troposphäre
 
+### Vertikale Durchmischung der Atmosphäre
+
+**Definition Boundary-Layer (Peplosphäre)**
+
++ Untersten 1,5 - 2 km
++ Bodenreibung und Erwärmung führen zu Turbulenzen
++ Hohe Konvektionsrate
++ Dunstschciht und Anreicherung von Aerosolen führen zum Frühnebel
+
+**Definition Winde**
+
+> Hauptursache für die Entstehung von Winde sind räumliche Unterschiede der Luftdruckverteilung. Es begwegen sich Luftteiclhen aus dem Gebiet mit einem Höheren Luftdruck zum Niederdruckgebiet
+
+**Inter-Tropical Convergence Zone ITCZ**
+
+> Bei Segler als Doldrum bekannt ein windstilles Äquatorgebiet wo Winde der nördlichen und südlichen Hemisphäre sich ausgleichen
+
+**Konvektion**
+
+> Bewegungsvorgänge in der Atmosphäre durch Auftrieb. Aufsteigen von warmen Luftpaketen absteigen von kälteren Luftpaketen.
+
+#### Feinstaubkonzentration in der Atmosphäre
+
++ Feinstaub sind Schwebstoffe die in der Atmosphäre verweilen.
++ In der Troposphäre erfolgt ein Auswaschen durch Niederschlag
++ In der Stratosphäre kann eine Verweildauer bis zu 100 Tagen beobachtet werden
+
+![b1d1d0e1e030b2fa636bc53401f68700.png](./b1d1d0e1e030b2fa636bc53401f68700.png)
+
+#### Trockenadiabatischer Temperaturgradient
+
+> Der Trockenadiabatische Temperaturgradient gilt für adiabatisch reversible und damit isentrope Bedingungen ohne dass es zur Änderung des Aggregatzustands kommt. Er beträgt etwa 10 °C pro Kilometer höhe
+
+Herleitung:
+
+Druckänderung mit der Höhe
+
++ $dF = - g \rho A dz$
++ dp = -g \rho dz$
+
+Temperaturänderung (Adiabatisch)
+
+$dG = \delta Q + V dp = Vdp$
+
+Es gilt $c_P = \frac{dH}{dT}$ und damit $c_PdT = Vdp = -V g \rho dz$ und nach umstellen $-\frac{dT}{dz} = 9.76 = \Gamma_d$ 
+
+![e8e307d10631edfe74c61502a8ddf313.png](./e8e307d10631edfe74c61502a8ddf313.png)
+
+
+### Kategorisierung der Wolken
+
+> Wolken werden Grundsätzlich nach Höhe und nach Erscheinungsbild eingeteilt
+
+![cabf6a767fd4862a9d078ed3288cbfde.png](./cabf6a767fd4862a9d078ed3288cbfde.png)
+
+![316ac501437acccd3c246ddd970f8a63.png](./316ac501437acccd3c246ddd970f8a63.png)
+
+Einige Wichtige Wolkentypen
+
+
+**Cirrus** In einer Höhe von 8-12 km mit dünne Fasern und Fäden, selten auch Büschel
+
+**Cirrocumulus** Kleine Haufenwolken, fast ausschließlich Eiskristalle 8-12 km
+
+**Cirrostratus** Schichtwolken oder fasriger Schleier in 8-12 km Höhe
+
+**Altocumulus** Haufenwolke tritt als großes Feld aus einzelnen Wolken auf 2-8 km
+
+**Altostratus** graue mittelhohe Schichtwolke ohne Konturen 2-8 km
+
+**Stratocummulus** Haufenschichtwolken ohne Fasern, Häufigste Wolke havben oft graue Färbung da Wassertropfen Licht absobieren 0,5-2km
+
+**Stratus** Klassicher Hochnebel, völlig Strukturlos 0-2km
+
+**Cumulus** Dicht scharf voneinander abgegrenzte Haufenwolken verändern sich strändig 0,6-2 km
+
+**Nimbostratus** Dunkelgraue Schicht klassische Dauerregenwolke 0.6 -12 km
+
+**Cumulonimbus** Sehr große Haufenwolke mit Massiver Vertikaler Ausdehnung und Ambos
+
+### Reinigungsmechanismen
+
++ Feuchte Abscheidung
+    +  Auflösung und Reinigung durch Wasser (Regenwolken, Regentropfen Aerosole)
++ Trockene Abscheidung
+    + Irreversible Absorption von Grund, Wasser, Pflanzenoberflächen
++ Photolyse
+    + Spaltung durch Sonnenlicht, höhenabhängig
++ Abbau durch Radikale (OH & $NO_3)$
+    + OH Radikal wird unterm Tag photokemisch hergestellt, Nitrat Radikal kann auch unter der Nacht bestehen
+ 
+#### Bildung des Hydroxylradikals
+
+![6c668fe44ed023953d025162c596674a.png](./6c668fe44ed023953d025162c596674a.png)
+
+> Das Hyroxyl-Radikal besitzt ein einziges ungepaartes Elektron und ist sehr reaktiv. Es entsteht in der Troposphäre aus Ozon und Wassermolekülen
+
+ 1. Spaltung durch Ozon: $O_3 \to O_2 + O$ dann mit Wasserdampf $O + H2O \to 2OH$

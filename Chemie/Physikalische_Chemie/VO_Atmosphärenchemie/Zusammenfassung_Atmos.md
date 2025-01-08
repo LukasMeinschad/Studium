@@ -189,7 +189,18 @@ Nach IPCC
 
 Folgende Grafik zeigt die Erwärmungsbeiträge von verschiedenen Klimagasen
 
-![c54da25ee86719de6c254dc7f7688d27.png](./c54da25ee86719de6c254dc7f7688d27.png)
+![c54da25ee86719de6c254dc7f7688d27.png](./c54da25ee86719de6c254dc7f7688d27.png "c54da25ee86719de6c254dc7f7688d27.png")
+
+### Klimabuget $CO_2$
+
+> Das Kohlenstoffbuget bezeichnet - im Kontext von Klimapolitik und globalen Klimaschutzmaßnahmen die Gesamtmenge and $CO_2$ an antrophogenen Quellen, die beginnend mit der Industrialisierung als Referenzzeitpunkt emmitiert werden darf um eine Grenze im Temperaturbereich einzuhalten
+
+Im Falle des Pariser Klimaabkommens:
+
++ globale Erwärmung sollte auf 2 °C beschränkt werden
++ Globale Treibhausemmisionen sollten bis Mitte des 21 Jhr auf null gesenkt werden
++ Alle 5 Jahre müssen nationale Beträge zur Emmisinsreduktion vorgetragen werden
++ 
 
 ## Kapitel 4 Zusammensetzung der Erdatmosphäre
 
@@ -555,3 +566,47 @@ Einige Wichtige Wolkentypen
 > Das Hyroxyl-Radikal besitzt ein einziges ungepaartes Elektron und ist sehr reaktiv. Es entsteht in der Troposphäre aus Ozon und Wassermolekülen
 
  1. Spaltung durch Ozon: $O_3 \to O_2 + O$ dann mit Wasserdampf $O + H2O \to 2OH$
+
+## Kapitel 9 Smog und Stuff
+
+### Sommersmog
+
+> Sommersmog bezeichnet man die Luftbelastung durch hohe Konzentrationen von Ozon und anderen Photooxidantien. Sommersmog entsteht durch die photochemische Oxidation von Kohlenmonoxig Methan und flüchtigen Kohlenwasserstoffen in Gegenwart von Stickoxiden und Wasserdampf als Katalysator bei nicht zu kühlen Wetter in nicht zu großer Höhe
+
+Man braucht
+
++ UV Strahlung in Verbindung mit
++ Stickoxiden
++ Flüchtigen organischen Verbindungen
+
+Ablauf:
+
+Am Morgen mit Stickoxiden
+
+$NO_2 + hv (\lambda < 420 nm ) \to NO + O$
+
+Dann Bildung von Ozon
+
++ $O_2 + O + M \to O_3 + M$
++ $O_3 + NO \to NO_2 + O_2$
+
+Vormittag: Bildung von organischen Radikalen
+
++ $RH + O \to R^*$
+
+Nachmittag Bildung von Hydroxylradikalen
+
+$H_2O + O \to 2HO*$
+
+Dann Reaktion mit organischen VOC
+
+![c1da9e81b499bcab78fb8f2cb11895b9.png](./c1da9e81b499bcab78fb8f2cb11895b9.png)
+
+### Wintersmog
+
+
+![ba1cc252e53724ca1c182e11f3e10860.png](./ba1cc252e53724ca1c182e11f3e10860.png)
+
+> Mischung aus Ruß, Schwefeldioxid $SO_2$ Staub und Nebel kann sich in Inversionswetterlagen lange Über Städten halten der Rauch stammt of aus Wärmekraftwerken Holzfeuerung und Farzeugen mit Verbrennungsmotoren
+
+Sprich Warme Luftpakete werden von Kaltluft umschlossen damit Ausschluss von Zirkulation!

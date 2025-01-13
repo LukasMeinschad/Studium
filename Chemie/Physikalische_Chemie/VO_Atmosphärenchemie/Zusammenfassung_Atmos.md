@@ -179,7 +179,7 @@ Man spricht zudem von:
 + Transient Climate Response: Das ist das Wachstum an globaler Temperatur wann sich der $CO_2$ gehalt verdoppelt
 + Equilibrium Climate Sensitivity: Das ist der Langzeit Temperaturanstieg im Limit des Gleichgewichts
 
-Nach Svante Arrhenius:
+Nach Svante Arrhenius: 
 
 > any doubling of the Percentage of $CO_2$ in the Air would raise the temperature of earths surface by 4°C
 

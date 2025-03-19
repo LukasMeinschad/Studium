@@ -1,0 +1,4 @@
+# 2025-03-12 19:31:52 +0100 lukas@MacBookPro.telekom.ip
+# TOPSPIN Molecule to PPM ranges correlations
+# /Users/lukas/Desktop/Studium/Chemie/OC/LAB/Spektren/Tri-Acetyl-Guanosine/3_6-chloroaminopurine/1/pdata/1
+# Start [PPM]     End [PPM]     Atom Numbers

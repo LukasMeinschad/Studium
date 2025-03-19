@@ -1,0 +1,16 @@
+##TITLE= Parameter file, TopSpin 4.5.0
+##JCAMPDX= 5.0
+##DATATYPE= Parameter Values
+##NPOINTS= 1	$$ modification sequence number
+##ORIGIN= Bruker BioSpin GmbH & Co. KG
+##OWNER= c7261113
+$$ 2025-03-10 18:41:25.143 +0100  UIBK\c7261113@pc172-c726
+$$ Z:/nmr400-ac/data/csat7142/nmr/AKP-OCPF-LP16-3_full/1/pdata/1001/outd
+$$ process C:\Bruker\TopSpin4.5.0\prog\au\bin\au_getlcosy.exe
+##$CURPLOT= <>
+##$CURPRIN= <$>
+##$DFORMAT= <normdp>
+##$LAYOUT= <+/1D_H.xwp>
+##$LFORMAT= <normlp>
+##$PFORMAT= <normpl>
+##END=

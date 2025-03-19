@@ -1,0 +1,64 @@
+##TITLE= Audit trail, TopSpin 4.5.0
+##JCAMPDX= 5.01
+##ORIGIN= Bruker BioSpin GmbH & Co. KG
+##OWNER= c7261113
+$$ Z:/nmr400-ac/data/csat7142/nmr/AKP-OCPF-LP16-1_full/4/pdata/1/auditp.txt
+##AUDIT TRAIL=  $$ (NUMBER, WHEN, WHO, WHERE, PROCESS, VERSION, WHAT)
+(   1,<2025-03-10T02:39:15.543+0000>,<UIBK\c7261113>,<PC172-C726>,<go4>,<TopSpin 4.5.0>,
+      <acquisition in progress>)
+$$ Z:/nmr400-ac/data/csat7142/nmr/AKP-OCPF-LP16-1_full/4/audita.txt
+(   2,<2025-03-10T03:18:20.928+0000>,<UIBK\c7261113>,<PC172-C726>,<go4>,<TopSpin 4.5.0>,
+      <created by zg on 'Avance NEO' (PC172-C726) by user 'UIBK\c7261113'
+       on data set with UUID 'bdc2f695-6d04-4578-9250-85c04729cd45'
+       started at 2025-03-10 02:39:15.543 +0000, POWCHK enabled, PULCHK disabled,
+       completed at 2025-03-10 03:18:20.927 +0000
+       configuration hash MD5:
+       D4 10 EC 6E BA 4A D6 BC 57 1B E8 5A 89 59 8E FA
+       double data hash MD5: 1K * 128
+       A6 C4 5B 4B D7 66 FC F5 FC 05 C7 EE 12 C0 83 F2>)
+(   3,<2025-03-10T04:18:21.329+0100>,<UIBK\c7261113>,<pc172-c726>,<xwish3>,<TopSpin 4.5.0>,
+      <ICON-NMR User ID: csat7142
+       double data hash MD5: 1K * 128
+       A6 C4 5B 4B D7 66 FC F5 FC 05 C7 EE 12 C0 83 F2>)
+(   4,<2025-03-10T04:18:24.611+0100>,<UIBK\c7261113>,<pc172-c726>,<proc2d>,<TopSpin 4.5.0>,
+      <Start of raw data processing
+       xfb same F2: SI = 1K WDW = 4 SSB = 2 FT_mod = 6 PKNL = 1 PHC0 = 0 PHC1 = 0 F1: SI = 1K ME_mod = 2 NCOEF = 32 WDW = 4 SSB = 2 FT_mod = 6 FCOR = 0.5 PHC0 = 0 PHC1 = 0
+       fid double data hash MD5: 1K * 128
+       A6 C4 5B 4B D7 66 FC F5 FC 05 C7 EE 12 C0 83 F2
+       data hash MD5: 1K * 1K
+       08 AD 51 40 06 21 E7 9C 93 10 33 82 77 A0 4E 61>)
+$$ Z:/nmr400-ac/data/csat7142/nmr/AKP-OCPF-LP16-1_full/4/pdata/1/auditp.txt
+(   5,<2025-03-10T04:18:25.007+0100>,<UIBK\c7261113>,<pc172-c726>,<proc2d>,<TopSpin 4.5.0>,
+      <mc2 F2: PH_mod = 2
+       data hash MD5: 1K * 1K
+       42 76 A2 06 7C 04 1A B3 65 72 9A CC BC C0 53 B4>)
+(   6,<2025-03-10T04:18:26.949+0100>,<UIBK\c7261113>,<pc172-c726>,<proc2d>,<TopSpin 4.5.0>,
+      <Start of raw data processing
+       xfb same F2: SI = 1K WDW = 4 SSB = 2 FT_mod = 6 PKNL = 1 PHC0 = 0 PHC1 = 0 F1: SI = 1K ME_mod = 2 NCOEF = 32 WDW = 4 SSB = 2 FT_mod = 6 FCOR = 0.5 PHC0 = 0 PHC1 = 0
+       fid double data hash MD5: 1K * 128
+       A6 C4 5B 4B D7 66 FC F5 FC 05 C7 EE 12 C0 83 F2
+       data hash MD5: 1K * 1K
+       08 AD 51 40 06 21 E7 9C 93 10 33 82 77 A0 4E 61>)
+(   7,<2025-03-10T04:18:36.557+0100>,<UIBK\c7261113>,<pc172-c726>,<proc2d>,<TopSpin 4.5.0>,
+      <Start of raw data processing
+       xfb same F2: SI = 1K WDW = 4 SSB = 2 FT_mod = 6 PKNL = 1 PHC0 = 137.473 PHC1 = 2.271413 F1: SI = 1K ME_mod = 2 NCOEF = 32 WDW = 4 SSB = 2 FT_mod = 6 FCOR = 0.5 PHC0 = 0 PHC1 = 0
+       fid double data hash MD5: 1K * 128
+       A6 C4 5B 4B D7 66 FC F5 FC 05 C7 EE 12 C0 83 F2
+       data hash MD5: 1K * 1K
+       A1 01 1D 03 D4 C3 16 09 A7 16 3F 55 DC 35 53 78>)
+(   8,<2025-03-10T04:18:36.806+0100>,<UIBK\c7261113>,<pc172-c726>,<proc2d>,<TopSpin 4.5.0>,
+      <abs2 F2: ABSG = 5 ABSF1 = 12.06677 ABSF2 = -0.06217528
+       data hash MD5: 1K * 1K
+       81 1E 6B CC 43 EF B8 14 27 BB F2 AF 7F C4 C4 A9>)
+(   9,<2025-03-10T04:18:37.057+0100>,<UIBK\c7261113>,<pc172-c726>,<proc2d>,<TopSpin 4.5.0>,
+      <abs1 F1: ABSG = 5 ABSF1 = 190.0075 ABSF2 = -10.0075
+       data hash MD5: 1K * 1K
+       2D 65 2A BA F8 FD 4E 6C B2 E3 20 86 DC A6 34 B2>)
+(  10,<2025-03-10T04:18:37.566+0100>,<UIBK\c7261113>,<pc172-c726>,<xwish3>,<TopSpin 4.5.0>,
+      <ICON-NMR User ID: csat7142
+       data hash MD5: 1K * 1K
+       2D 65 2A BA F8 FD 4E 6C B2 E3 20 86 DC A6 34 B2>)
+##END=
+
+$$ hash MD5
+$$ EC C9 75 25 46 2D 50 87 0F 78 08 49 0E C8 0E 11

@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PeakList modified="2025-03-12T21:07:42">
+  <PeakList1D>
+    <PeakList1DHeader creator="lukas" date="2025-03-12T21:07:42" expNo="1" name="4_aminopurine" owner="" procNo="1" source="/Users/lukas/Desktop/Studium/Chemie/OC/LAB/Spektren/Tri-Acetyl-Guanosine">
+      <PeakPickDetails>F1=8.602760ppm, F2=8.582428ppm, MI=0.46cm, MAXI=2.76cm, PC=1.000
+      </PeakPickDetails>
+    </PeakList1DHeader>
+    <Peak1D F1="8.59458" intensity="1.658727" type="0"/>
+  </PeakList1D>
+  <PeakList1D>
+    <PeakList1DHeader creator="lukas" date="2025-03-12T21:07:42" expNo="1" name="4_aminopurine" owner="" procNo="1" source="/Users/lukas/Desktop/Studium/Chemie/OC/LAB/Spektren/Tri-Acetyl-Guanosine">
+      <PeakPickDetails>F1=8.414002ppm, F2=8.395490ppm, MI=11.09cm, MAXI=16.64cm, PC=1.000
+      </PeakPickDetails>
+    </PeakList1DHeader>
+    <Peak1D F1="8.40447" intensity="15.0" type="0"/>
+  </PeakList1D>
+  <PeakList1D>
+    <PeakList1DHeader creator="lukas" date="2025-03-12T21:07:42" expNo="1" name="4_aminopurine" owner="" procNo="1" source="/Users/lukas/Desktop/Studium/Chemie/OC/LAB/Spektren/Tri-Acetyl-Guanosine">
+      <PeakPickDetails>F1=8.329637ppm, F2=8.296863ppm, MI=0.82cm, MAXI=1.57cm, PC=1.000
+      </PeakPickDetails>
+    </PeakList1DHeader>
+    <Peak1D F1="8.315188" intensity="1.494217" type="0"/>
+  </PeakList1D>
+  <PeakList1D>
+    <PeakList1DHeader creator="lukas" date="2025-03-12T21:07:42" expNo="1" name="4_aminopurine" owner="" procNo="1" source="/Users/lukas/Desktop/Studium/Chemie/OC/LAB/Spektren/Tri-Acetyl-Guanosine">
+      <PeakPickDetails>F1=7.618304ppm, F2=7.516945ppm, MI=0.61cm, MAXI=1.18cm, PC=1.000
+      </PeakPickDetails>
+    </PeakList1DHeader>
+    <Peak1D F1="7.572752" intensity="1.005111" type="0"/>
+  </PeakList1D>
+  <PeakList1D>
+    <PeakList1DHeader creator="lukas" date="2025-03-12T21:07:42" expNo="1" name="4_aminopurine" owner="" procNo="1" source="/Users/lukas/Desktop/Studium/Chemie/OC/LAB/Spektren/Tri-Acetyl-Guanosine">
+      <PeakPickDetails>F1=6.569816ppm, F2=6.548270ppm, MI=0.38cm, MAXI=0.67cm, PC=1.000
+      </PeakPickDetails>
+    </PeakList1DHeader>
+    <Peak1D F1="6.557727" intensity="0.5476166" type="0"/>
+  </PeakList1D>
+  <PeakList1D>
+    <PeakList1DHeader creator="lukas" date="2025-03-12T21:07:42" expNo="1" name="4_aminopurine" owner="" procNo="1" source="/Users/lukas/Desktop/Studium/Chemie/OC/LAB/Spektren/Tri-Acetyl-Guanosine">
+      <PeakPickDetails>F1=5.849683ppm, F2=5.820550ppm, MI=-0.00cm, MAXI=1.43cm, PC=1.000
+      </PeakPickDetails>
+    </PeakList1DHeader>
+    <Peak1D F1="5.841793" intensity="0.584916" type="0"/>
+    <Peak1D F1="5.826923" intensity="0.6045965" type="0"/>
+  </PeakList1D>
+  <PeakList1D>
+    <PeakList1DHeader creator="lukas" date="2025-03-12T21:07:42" expNo="1" name="4_aminopurine" owner="" procNo="1" source="/Users/lukas/Desktop/Studium/Chemie/OC/LAB/Spektren/Tri-Acetyl-Guanosine">
+      <PeakPickDetails>F1=4.524643ppm, F2=4.474145ppm, MI=0.21cm, MAXI=0.49cm, PC=1.000
+      </PeakPickDetails>
+    </PeakList1DHeader>
+    <Peak1D F1="4.506806" intensity="0.2755382" type="0"/>
+    <Peak1D F1="4.493364" intensity="0.3832708" type="0"/>
+    <Peak1D F1="4.47947" intensity="0.3006047" type="0"/>
+  </PeakList1D>
+  <PeakList1D>
+    <PeakList1DHeader creator="lukas" date="2025-03-12T21:07:42" expNo="1" name="4_aminopurine" owner="" procNo="1" source="/Users/lukas/Desktop/Studium/Chemie/OC/LAB/Spektren/Tri-Acetyl-Guanosine">
+      <PeakPickDetails>F1=4.175782ppm, F2=4.138387ppm, MI=-0.68cm, MAXI=1.40cm, PC=1.000
+      </PeakPickDetails>
+    </PeakList1DHeader>
+    <Peak1D F1="4.14884" intensity="0.2773642" type="0"/>
+    <Peak1D F1="4.139935" intensity="0.3480166" type="0"/>
+  </PeakList1D>
+  <PeakList1D>
+    <PeakList1DHeader creator="lukas" date="2025-03-12T21:07:42" expNo="1" name="4_aminopurine" owner="" procNo="1" source="/Users/lukas/Desktop/Studium/Chemie/OC/LAB/Spektren/Tri-Acetyl-Guanosine">
+      <PeakPickDetails>F1=4.138387ppm, F2=4.124890ppm, MI=0.22cm, MAXI=0.58cm, PC=1.000
+      </PeakPickDetails>
+    </PeakList1DHeader>
+    <Peak1D F1="4.136674" intensity="0.3216085" type="0"/>
+    <Peak1D F1="4.127787" intensity="0.3261948" type="0"/>
+  </PeakList1D>
+  <PeakList1D>
+    <PeakList1DHeader creator="lukas" date="2025-03-12T21:07:42" expNo="1" name="4_aminopurine" owner="" procNo="1" source="/Users/lukas/Desktop/Studium/Chemie/OC/LAB/Spektren/Tri-Acetyl-Guanosine">
+      <PeakPickDetails>F1=3.967495ppm, F2=3.953885ppm, MI=0.44cm, MAXI=0.63cm, PC=1.000
+      </PeakPickDetails>
+    </PeakList1DHeader>
+    <Peak1D F1="3.960322" intensity="0.5465734" type="0"/>
+  </PeakList1D>
+  <PeakList1D>
+    <PeakList1DHeader creator="lukas" date="2025-03-12T21:07:42" expNo="1" name="4_aminopurine" owner="" procNo="1" source="/Users/lukas/Desktop/Studium/Chemie/OC/LAB/Spektren/Tri-Acetyl-Guanosine">
+      <PeakPickDetails>F1=3.917066ppm, F2=3.899791ppm, MI=0.30cm, MAXI=0.46cm, PC=1.000
+      </PeakPickDetails>
+    </PeakList1DHeader>
+    <Peak1D F1="3.912212" intensity="0.3819584" type="0"/>
+    <Peak1D F1="3.902934" intensity="0.3891433" type="0"/>
+  </PeakList1D>
+  <PeakList1D>
+    <PeakList1DHeader creator="lukas" date="2025-03-12T21:07:42" expNo="1" name="4_aminopurine" owner="" procNo="1" source="/Users/lukas/Desktop/Studium/Chemie/OC/LAB/Spektren/Tri-Acetyl-Guanosine">
+      <PeakPickDetails>F1=3.571042ppm, F2=3.559351ppm, MI=1.02cm, MAXI=1.62cm, PC=1.000
+      </PeakPickDetails>
+    </PeakList1DHeader>
+    <Peak1D F1="3.56471" intensity="1.484056" type="0"/>
+  </PeakList1D>
+  <PeakList1D>
+    <PeakList1DHeader creator="lukas" date="2025-03-12T21:07:42" expNo="1" name="4_aminopurine" owner="" procNo="1" source="/Users/lukas/Desktop/Studium/Chemie/OC/LAB/Spektren/Tri-Acetyl-Guanosine">
+      <PeakPickDetails>F1=2.804485ppm, F2=2.736781ppm, MI=0.72cm, MAXI=6.50cm, PC=1.000
+      </PeakPickDetails>
+    </PeakList1DHeader>
+    <Peak1D F1="2.796391" intensity="1.731213" type="0"/>
+    <Peak1D F1="2.778301" intensity="5.570196" type="0"/>
+    <Peak1D F1="2.760225" intensity="5.695135" type="0"/>
+    <Peak1D F1="2.74218" intensity="1.858464" type="0"/>
+  </PeakList1D>
+  <PeakList1D>
+    <PeakList1DHeader creator="lukas" date="2025-03-12T21:07:42" expNo="1" name="4_aminopurine" owner="" procNo="1" source="/Users/lukas/Desktop/Studium/Chemie/OC/LAB/Spektren/Tri-Acetyl-Guanosine">
+      <PeakPickDetails>F1=1.854883ppm, F2=1.838655ppm, MI=6.39cm, MAXI=7.87cm, PC=1.000
+      </PeakPickDetails>
+    </PeakList1DHeader>
+    <Peak1D F1="1.848238" intensity="7.530605" type="0"/>
+  </PeakList1D>
+  <PeakList1D>
+    <PeakList1DHeader creator="lukas" date="2025-03-12T21:07:42" expNo="1" name="4_aminopurine" owner="" procNo="1" source="/Users/lukas/Desktop/Studium/Chemie/OC/LAB/Spektren/Tri-Acetyl-Guanosine">
+      <PeakPickDetails>F1=1.089198ppm, F2=1.043132ppm, MI=4.11cm, MAXI=14.14cm, PC=1.000
+      </PeakPickDetails>
+    </PeakList1DHeader>
+    <Peak1D F1="1.084587" intensity="6.309171" type="0"/>
+    <Peak1D F1="1.06655" intensity="12.76789" type="0"/>
+    <Peak1D F1="1.048451" intensity="6.055819" type="0"/>
+  </PeakList1D>
+  <PeakList1D>
+    <PeakList1DHeader creator="lukas@MacBookPro.telekom.ip" date="2025-03-12T21:17:21" expNo="1" name="4_aminopurine" owner="lukas" procNo="1" source="/Users/lukas/Desktop/Studium/Chemie/OC/LAB/Spektren/Tri-Acetyl-Guanosine">
+      <PeakPickDetails>Manually picked peaks
+</PeakPickDetails>
+    </PeakList1DHeader>
+    <Peak1D F1="2.508018092795755" intensity="2.9501629094933555" type="1"/>
+  </PeakList1D>
+</PeakList>

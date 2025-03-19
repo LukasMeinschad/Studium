@@ -1,0 +1,33 @@
+##TITLE= Parameter file, TopSpin 4.5.0
+##JCAMPDX= 5.0
+##DATATYPE= Parameter Values
+##NPOINTS= 1	$$ modification sequence number
+##ORIGIN= Bruker BioSpin GmbH & Co. KG
+##OWNER= c7261113
+$$ 2025-03-08 12:11:30.579 +0100  UIBK\c7261113@pc172-c726
+$$ C:/Bruker/TopSpin4.5.0/prog/curdir/changer/inmrchanger/Mar03-2025-0958-UIBK-c7261113/35/35.656/data/nmr/AKP-OCPF-LP16-2_full/5/pdata/1/curdat2
+$$ process C:\Bruker\TopSpin4.5.0\prog\mod\xwish3.exe
+##$CUREXP= <>
+##$DATPATH= <>
+##$DATPATH2= <Z:/nmr400-ac/data/csat7142/nmr>
+##$DATPATH3= <Z:/nmr400-ac/data/csat7142/nmr>
+##$DETAILS= <>
+##$DU= </u>
+##$DU2= <Z:\nmr400-ac>
+##$DU3= <>
+##$EXPNO= 1
+##$EXPNO2= 1
+##$EXPNO3= 0
+##$NAME= <>
+##$NAME2= <AKP-OCPF-LP16-2_full>
+##$NAME3= <>
+##$PROCNO= 1
+##$PROCNO2= 1
+##$PROCNO3= 1
+##$SCALE2= 1
+##$SCALE3= 1
+##$TYPE= <nmr>
+##$USER= <>
+##$USER2= <csat7142>
+##$USER3= <>
+##END=

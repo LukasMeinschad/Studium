@@ -1,0 +1,42 @@
+##TITLE= Audit trail, TopSpin 4.5.0
+##JCAMPDX= 5.01
+##ORIGIN= Bruker BioSpin GmbH & Co. KG
+##OWNER= c7261113
+$$ Z:/nmr400-ac/data/csat7142/nmr/AKP-OCPF-LP16-2_full/5/pdata/1/auditp.txt
+##AUDIT TRAIL=  $$ (NUMBER, WHEN, WHO, WHERE, PROCESS, VERSION, WHAT)
+(   1,<2025-03-09T23:08:46.369+0000>,<UIBK\c7261113>,<PC172-C726>,<go4>,<TopSpin 4.5.0>,
+      <acquisition in progress>)
+$$ Z:/nmr400-ac/data/csat7142/nmr/AKP-OCPF-LP16-2_full/5/audita.txt
+(   2,<2025-03-10T00:37:47.797+0000>,<UIBK\c7261113>,<PC172-C726>,<go4>,<TopSpin 4.5.0>,
+      <created by zg on 'Avance NEO' (PC172-C726) by user 'UIBK\c7261113'
+       on data set with UUID 'f832c20a-c3f4-45b9-89f2-9c7ab32f7891'
+       started at 2025-03-09 23:08:46.369 +0000, POWCHK enabled, PULCHK disabled,
+       completed at 2025-03-10 00:37:47.796 +0000
+       configuration hash MD5:
+       D4 10 EC 6E BA 4A D6 BC 57 1B E8 5A 89 59 8E FA
+       double data hash MD5: 1K * 128
+       B0 1E 18 11 8B 20 10 F6 09 FD 12 87 31 BB 5F E6>)
+(   3,<2025-03-10T01:37:49.143+0100>,<UIBK\c7261113>,<pc172-c726>,<xwish3>,<TopSpin 4.5.0>,
+      <ICON-NMR User ID: csat7142
+       double data hash MD5: 1K * 128
+       B0 1E 18 11 8B 20 10 F6 09 FD 12 87 31 BB 5F E6>)
+(   4,<2025-03-10T01:37:54.353+0100>,<UIBK\c7261113>,<pc172-c726>,<proc2d>,<TopSpin 4.5.0>,
+      <Start of raw data processing
+       xfb same F2: SI = 1K WDW = 3 SSB = 0 FT_mod = 6 PKNL = 1 F1: SI = 2K ME_mod = 2 NCOEF = 32 WDW = 4 SSB = 2 FT_mod = 6 FCOR = 0.5
+       fid double data hash MD5: 1K * 128
+       B0 1E 18 11 8B 20 10 F6 09 FD 12 87 31 BB 5F E6
+       data hash MD5: 1K * 2K
+       D9 E9 FB 3D 1B EB DA D2 AA 23 EC FF 98 09 06 F2>)
+$$ Z:/nmr400-ac/data/csat7142/nmr/AKP-OCPF-LP16-2_full/5/pdata/1/auditp.txt
+(   5,<2025-03-10T01:37:55.080+0100>,<UIBK\c7261113>,<pc172-c726>,<proc2d>,<TopSpin 4.5.0>,
+      <mc2 F2: PH_mod = 2
+       data hash MD5: 1K * 2K
+       CE 00 F5 5F 6F C2 35 A6 5F FF E5 66 40 B9 9C 26>)
+(   6,<2025-03-10T01:37:55.350+0100>,<UIBK\c7261113>,<pc172-c726>,<xwish3>,<TopSpin 4.5.0>,
+      <ICON-NMR User ID: csat7142
+       data hash MD5: 1K * 2K
+       CE 00 F5 5F 6F C2 35 A6 5F FF E5 66 40 B9 9C 26>)
+##END=
+
+$$ hash MD5
+$$ 44 56 E0 6D 8A E3 1C B3 F5 5C 14 9B 02 3C A5 BF

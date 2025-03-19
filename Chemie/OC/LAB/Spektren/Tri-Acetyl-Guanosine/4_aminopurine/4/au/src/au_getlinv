@@ -1,0 +1,296 @@
+/*** ^^A -*-C++-*- **********************************************/
+/*  au_getlinv      25.08.2023                                  */
+/****************************************************************/
+/*  Short Description :                                         */
+/*  AU program for acquisition of sweep width optimized         */
+/*  2D inverse spectra.                                         */
+/****************************************************************/
+/*  Keywords :                                                  */
+/*  sweep width optimized inverse 2D                            */
+/****************************************************************/
+/*  Description/Usage :                                         */
+/*  AU program for acquisition of sweep width optimized         */
+/*  2D inverse spectra. This version also works when a          */
+/*  sample changer run was started without processing of        */
+/*  the acquired data. If the integral range file 'intrng'      */
+/*  is missing in the preparation experiment, then the          */
+/*  preparation data set is processed with ef, apk, sref        */
+/*  and abs. The abs command creates a new intrng file          */
+/*  which is then evaluated by the GETLINV command. The         */
+/*  second dataset corresponds to the F2-direction of the       */
+/*  2D-experiment. The phase values in F2 are determined        */
+/*  with a 1D acquisition using the zg pulse program and        */
+/*  a p1 which is 10% of the p1 used on the 2D. The so          */
+/*  acquired 1D is phase corrected with the apk command         */
+/*  and the phase values are transferred to 2D data set.        */
+/*  If getlim results in too small (< 0.08 s) or too large      */
+/*  (> 0.22 s) acquisition time, TD and SI are adjusted.        */
+/*  Command line options:                                       */
+/*      usepp=1     PP for SW optimisation instead of integrals */
+/*      keeprt=1    original recycle time (d1+aq) will be kept  */
+/*      llim=val    the lower aq-limit (0.08) or the upper      */
+/*      ulim=val    limit may be specified. example: ulim=0.35  */
+/****************************************************************/
+/*  Author(s) :                                                 */
+/*  Name            : Rainer Kerssebaum                         */
+/*  Organisation    : Bruker BioSpin GmbH                       */
+/*  Email           : rainer.kerssebaum@bruker.com              */
+/****************************************************************/
+/*  Name    Date    Modification:                               */
+/*  gsc     960129  created                                     */
+/*  rke     171121  reading wrong status params corrected       */
+/*                  limit AQ after getlim 0.08 < aq < 0.22      */
+/*  rke     230825  inconsistent 1D reference handling fixed    */
+/****************************************************************/
+/*
+$Id:$
+*/
+
+AUERR = au_getlinv(curdat);
+QUIT
+
+/*  Define some global constants and variables         */
+#define TLL 1024
+int     debugflag=0;
+
+/* cmdline parameters */
+int     keeprt=0, usepp=0;
+float   llim=0.08, ulim=0.22;
+
+static void evalcmdline(void);
+static int check_cmd_arg(const char*, char*, char*);
+static int get_pp(const char*);
+
+
+int au_getlinv(const char* curdat)
+{
+char    disk_sav[PATH_MAX], name_sav[PATH_MAX];
+float   aq, d1, f1, rcyc;
+int     expno_sav = expno, procno_sav = procno;
+int     digmod = 0, ABSG_status = 0, td2;
+int     PH_mod_status = -1, FT_mod_status = -1;
+
+(void)strcpy(disk_sav,disk);
+(void)strcpy(name_sav,name);
+
+FETCHPAR("D 1", &d1)
+FETCHPAR("AQ", &aq)
+rcyc = d1 + aq;
+
+evalcmdline();
+
+GETCURDATA2
+if (access(ACQUPATH2("fid"), F_OK) != 0)
+{
+    Proc_err(ERROPT_AK_NO,"Reference spectrum does not exist, continuing with default SW.");
+}
+else
+{
+    DATASET(name2,expno2,procno2,disk2,user2)
+    FETCHPARS("PH_mod",&PH_mod_status)
+    FETCHPARS("FT_mod",&FT_mod_status)
+
+    if ( (access(PROCPATH("1r"), F_OK) != 0) ||  FT_mod_status == 0  ||  PH_mod_status == 0)
+    {
+        EF
+        ERRORABORT
+
+        FETCHPARS("DIGMOD",&digmod)
+
+        if (digmod == 3)
+            APK0
+        else
+            APK
+
+        SREF
+    }
+
+    if (usepp == 0)
+    {
+        FETCHPARS("ABSG",&ABSG_status)
+        if (ABSG_status == 0)
+        {
+            ABS
+            ERRORABORT
+        }
+    }
+
+    if (usepp == 1)
+    {
+        if (get_pp(curdat) < 0)
+            ABORT
+    }
+    
+
+    DATASET(name_sav,expno_sav,procno_sav,disk_sav,user)
+
+    if (usepp == 0)
+    {
+        GETLINV
+    }
+    else
+    {
+        GETLINV_PP
+    }
+    ERRORABORT
+}
+
+FETCHPAR("AQ", &aq)
+FETCHPAR("TD", &td2)
+
+if (ulim < llim)
+{
+    f1 = ulim;
+    ulim = llim;
+    llim = f1;
+}
+
+while (aq > ulim)
+{
+    td2 /= 2;
+    STOREPAR("TD", td2)
+    FETCHPAR("AQ", &aq)
+}
+while (aq < llim)
+{
+    td2 *= 2;
+    STOREPAR("TD", td2)
+    FETCHPAR("AQ", &aq)
+}
+STOREPAR("SI", td2)
+
+if (keeprt == 1)
+    d1 = rcyc - aq;
+
+STOREPAR("D 1", d1)
+Show_meta(SM_RAWP);
+
+
+ROTOFF
+RGA
+ZG
+
+return 0;
+}   //QUIT
+
+
+/* subroutines ****************************************************************/
+
+/* subroutine evalcmdline *****************************************************/
+static void evalcmdline(void)
+{
+int     i;
+char    argname[TLL], argvalue[TLL];
+
+if (i_argc > 2)
+{
+    if (debugflag > 2)
+        Proc_err(ERROPT_AK_OK, "DEBUG sub\n%d arguments", i_argc-2);
+
+    for (i=1; i <= i_argc-2; i++)
+    {
+        if (debugflag > 2)
+            Proc_err(ERROPT_AK_OK, "DEBUG sub\nargument %d: %s", i, i_argv[i+1]);
+
+        if (check_cmd_arg(i_argv[i+1], argname, argvalue) == 0)
+        {
+            if (debugflag > 2)
+                Proc_err(ERROPT_AK_OK,"DEBUG sub\nargname = %s\nvalue = %s", argname, argvalue);
+/*          evaluate param */
+            if (!strcmp(argname, "usepp"))
+            {
+                usepp=atoi(argvalue);
+                if ((usepp < 1) || (usepp >1))
+                    usepp = 0;
+            }
+
+            else if (!strcmp(argname, "keeprt"))
+            {
+                keeprt=atoi(argvalue);
+                if ((keeprt < 0) || (keeprt >1))
+                    keeprt = 0;
+            }
+
+            else if (!strcmp(argname, "llim"))
+            {
+                llim=atof(argvalue);
+                if (llim <= 0.0)
+                    llim = 0.08;
+            }
+
+            else if (!strcmp(argname, "ulim"))
+            {
+                ulim=atof(argvalue);
+                if (ulim <= 0.0)
+                    ulim = 0.22;
+            }
+        }
+    }
+}
+else
+{
+    if (debugflag > 2)
+        Proc_err(ERROPT_AK_OK, "DEBUG sub\nno arguments");
+}
+
+if (debugflag > 2)
+    Proc_err(ERROPT_AK_OK, "DEBUG sub\nkeeprt %d\nusepp %d", keeprt, usepp);
+
+} /* end subroutine */
+
+/* subroutine check_cmd_arg ***************************************************/
+static int check_cmd_arg(const char* cpar, char* pname, char* pvalue)
+{
+const char* pch = strchr(cpar, '=');
+
+if (pch == NULL)
+    return -1;
+
+sprintf(pname, "%.*s", (int)(pch - cpar), cpar);
+strcpy(pvalue, pch + 1);
+
+if (strcmp(pvalue, "(null)") == 0)
+    pvalue[0] = 0;
+
+if (debugflag > 2)
+    Proc_err(ERROPT_AK_OK, "DEBUG sub\nparname = %s %lu\nvalue = %s %lu",
+             pname, (unsigned long)strlen(pname),
+             pvalue, (unsigned long)strlen(pvalue));
+return 0;
+} /* end subroutine */
+
+/* subroutine get_pp *********************************************************/
+static int get_pp(const char* curdat)
+{
+double  sf, sw_p, f1p, f2p, f1porig, f2porig;
+float   offset;
+int     ret = 0;
+
+/* fetch the current plotregion */
+FETCHPAR("F1P", &f1porig)
+FETCHPAR("F2P", &f2porig)
+
+/*********************************************/
+/* define the plotregion as big as */
+/* the complete acquisition region */
+FETCHPARS("OFFSET", &offset)
+FETCHPARS("SW_p", &sw_p)
+FETCHPARS("SF", &sf)
+f1p = offset;
+f2p = f1p - sw_p / sf;
+STOREPAR("F1P", f1p)
+STOREPAR("F2P", f2p)
+
+/* create the pick picking listing */
+PP
+if (AUERR < 0)
+    ret = -1;
+
+/* restore the original plotregion */
+if (f1porig != f2porig)
+{
+    STOREPAR("F1P",f1porig)
+    STOREPAR("F2P",f2porig)
+}
+return ret;
+} /* end subroutine */

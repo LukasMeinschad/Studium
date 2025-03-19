@@ -1,0 +1,15 @@
+   Current data set:
+   NAME =	3_6-chloroaminopurine	EXPNO =	1	PROCNO = 1
+   DU   =	/Users/lukas/Desktop/Studium/Chemie/OC/LAB/Spektren/Tri-Acetyl-Guanosine
+
+   Number   Integrated Region     Integral
+     1      8.454      8.422         0.95451
+     2      7.054      6.990         1.81247
+     3      6.547      6.475         0.54767
+     4      6.115      6.074         0.27041
+     5      5.888      5.849         1.29958
+     6      4.563      4.513         1.26565
+     7      4.211      4.177         1.13675
+     8      4.034      4.013         0.40101
+     9      3.997      3.937         1.37620
+    10      3.745      3.565         2.93576

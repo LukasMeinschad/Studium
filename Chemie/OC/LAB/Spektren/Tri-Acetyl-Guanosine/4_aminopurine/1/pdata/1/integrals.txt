@@ -1,0 +1,13 @@
+   Current data set:
+   NAME =	4_aminopurine	EXPNO =	1	PROCNO = 1
+   DU   =	/Users/lukas/Desktop/Studium/Chemie/OC/LAB/Spektren/Tri-Acetyl-Guanosine
+
+   Number   Integrated Region     Integral
+     1      8.598      8.591         0.58489
+     2      8.410      8.398         5.49926
+     3      8.319      8.310         0.68838
+     4      5.847      5.821         0.76999
+     5      4.512      4.474         0.79198
+     6      4.157      4.112         1.00000
+     7      3.918      3.895         0.74701
+     8      3.567      3.561         0.62604

@@ -1,0 +1,79 @@
+##TITLE= Audit trail, TopSpin 4.5.0
+##JCAMPDX= 5.01
+##ORIGIN= Bruker BioSpin GmbH & Co. KG
+##OWNER= c7261113
+$$ Z:/nmr400-ac/data/csat7142/nmr/AKP-OCPF-LP16-3_full/4/pdata/1000/auditp.txt
+##AUDIT TRAIL=  $$ (NUMBER, WHEN, WHO, WHERE, PROCESS, VERSION, WHAT)
+(   1,<2025-03-10T21:04:18.287+0100>,<UIBK\c7261113>,<pc172-c726>,<mvrow>,<TopSpin 4.5.0>,
+      <rsr 249 from
+       1 4 "AKP-OCPF-LP16-3_full" "Z:/nmr400-ac/data/csat7142/nmr"
+       data hash MD5: 1K
+       D7 FA EE 21 95 5B E2 0D 88 51 55 6A 8C 97 F5 FD>)
+(   2,<2025-03-10T21:04:19.000+0100>,<UIBK\c7261113>,<pc172-c726>,<proc1d>,<TopSpin 4.5.0>,
+      <add DC = 1 DATMOD = 1 of
+       1000 4 "AKP-OCPF-LP16-3_full" "Z:/nmr400-ac/data/csat7142/nmr"
+       1001 4 "AKP-OCPF-LP16-3_full" "Z:/nmr400-ac/data/csat7142/nmr"
+       data hash MD5: 1K
+       19 02 AD 05 F9 05 5F 23 06 EA 51 44 1E AF 7F D8>)
+(   3,<2025-03-10T21:04:19.506+0100>,<UIBK\c7261113>,<pc172-c726>,<proc1d>,<TopSpin 4.5.0>,
+      <add DC = 1 DATMOD = 1 of
+       1000 4 "AKP-OCPF-LP16-3_full" "Z:/nmr400-ac/data/csat7142/nmr"
+       1001 4 "AKP-OCPF-LP16-3_full" "Z:/nmr400-ac/data/csat7142/nmr"
+       data hash MD5: 1K
+       91 00 A2 BD 9D 7E 50 91 DE 3B A5 A9 D7 47 83 8F>)
+(   4,<2025-03-10T21:04:20.326+0100>,<UIBK\c7261113>,<pc172-c726>,<proc1d>,<TopSpin 4.5.0>,
+      <add DC = 1 DATMOD = 1 of
+       1000 4 "AKP-OCPF-LP16-3_full" "Z:/nmr400-ac/data/csat7142/nmr"
+       1001 4 "AKP-OCPF-LP16-3_full" "Z:/nmr400-ac/data/csat7142/nmr"
+       data hash MD5: 1K
+       6B 8E 02 E4 61 A3 33 BC 84 29 79 D1 19 33 10 65>)
+(   5,<2025-03-10T21:04:20.870+0100>,<UIBK\c7261113>,<pc172-c726>,<proc1d>,<TopSpin 4.5.0>,
+      <add DC = 1 DATMOD = 1 of
+       1000 4 "AKP-OCPF-LP16-3_full" "Z:/nmr400-ac/data/csat7142/nmr"
+       1001 4 "AKP-OCPF-LP16-3_full" "Z:/nmr400-ac/data/csat7142/nmr"
+       data hash MD5: 1K
+       AA FB ED 3A 0A 7A 07 0A E0 84 3E F2 BA 0B 7E 26>)
+(   6,<2025-03-10T21:04:21.388+0100>,<UIBK\c7261113>,<pc172-c726>,<proc1d>,<TopSpin 4.5.0>,
+      <add DC = 1 DATMOD = 1 of
+       1000 4 "AKP-OCPF-LP16-3_full" "Z:/nmr400-ac/data/csat7142/nmr"
+       1001 4 "AKP-OCPF-LP16-3_full" "Z:/nmr400-ac/data/csat7142/nmr"
+       data hash MD5: 1K
+       61 0D B3 F0 4C 76 88 25 DE E1 A4 27 88 6E C8 DD>)
+(   7,<2025-03-10T21:04:22.047+0100>,<UIBK\c7261113>,<pc172-c726>,<proc1d>,<TopSpin 4.5.0>,
+      <add DC = 1 DATMOD = 1 of
+       1000 4 "AKP-OCPF-LP16-3_full" "Z:/nmr400-ac/data/csat7142/nmr"
+       1001 4 "AKP-OCPF-LP16-3_full" "Z:/nmr400-ac/data/csat7142/nmr"
+       data hash MD5: 1K
+       90 E9 38 9B 80 60 46 61 27 58 36 8D 75 22 CF 45>)
+(   8,<2025-03-10T21:04:22.554+0100>,<UIBK\c7261113>,<pc172-c726>,<proc1d>,<TopSpin 4.5.0>,
+      <add DC = 1 DATMOD = 1 of
+       1000 4 "AKP-OCPF-LP16-3_full" "Z:/nmr400-ac/data/csat7142/nmr"
+       1001 4 "AKP-OCPF-LP16-3_full" "Z:/nmr400-ac/data/csat7142/nmr"
+       data hash MD5: 1K
+       83 01 6F EA 5F 03 B6 81 88 C6 2F 11 DE 27 B5 01>)
+(   9,<2025-03-10T21:04:23.305+0100>,<UIBK\c7261113>,<pc172-c726>,<proc1d>,<TopSpin 4.5.0>,
+      <add DC = 1 DATMOD = 1 of
+       1000 4 "AKP-OCPF-LP16-3_full" "Z:/nmr400-ac/data/csat7142/nmr"
+       1001 4 "AKP-OCPF-LP16-3_full" "Z:/nmr400-ac/data/csat7142/nmr"
+       data hash MD5: 1K
+       DD 81 A3 B4 56 57 98 16 19 3F F3 3A 19 9F C7 DF>)
+(  10,<2025-03-10T21:04:24.012+0100>,<UIBK\c7261113>,<pc172-c726>,<proc1d>,<TopSpin 4.5.0>,
+      <add DC = 1 DATMOD = 1 of
+       1000 4 "AKP-OCPF-LP16-3_full" "Z:/nmr400-ac/data/csat7142/nmr"
+       1001 4 "AKP-OCPF-LP16-3_full" "Z:/nmr400-ac/data/csat7142/nmr"
+       data hash MD5: 1K
+       51 B2 59 BD A1 F2 6C 66 59 DB 19 33 B3 1B 35 A4>)
+(  11,<2025-03-10T21:04:24.588+0100>,<UIBK\c7261113>,<pc172-c726>,<proc1d>,<TopSpin 4.5.0>,
+      <add DC = 1 DATMOD = 1 of
+       1000 4 "AKP-OCPF-LP16-3_full" "Z:/nmr400-ac/data/csat7142/nmr"
+       1001 4 "AKP-OCPF-LP16-3_full" "Z:/nmr400-ac/data/csat7142/nmr"
+       data hash MD5: 1K
+       2E 5E 29 28 E4 3D E6 98 45 E0 BF 17 B2 94 BB 1A>)
+(  12,<2025-03-10T21:04:24.823+0100>,<UIBK\c7261113>,<pc172-c726>,<proc1d>,<TopSpin 4.5.0>,
+      <apk
+       data hash MD5: 1K
+       23 E5 53 FD C5 BB BD AB A6 AD 1C EE 9A 06 BD 5E>)
+##END=
+
+$$ hash MD5
+$$ 7A CB 12 07 D5 87 E1 6A CC 4E 6D 67 A2 C5 EB 04

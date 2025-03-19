@@ -1,0 +1,15 @@
+##TITLE= Audit trail, TopSpin 4.5.0
+##JCAMPDX= 5.01
+##ORIGIN= Bruker BioSpin GmbH & Co. KG
+##OWNER= c7261113
+$$ Z:/nmr400-ac/data/csat7142/nmr/AKP-OCPF-LP16-2_full/4/pdata/1001/auditp.txt
+##AUDIT TRAIL=  $$ (NUMBER, WHEN, WHO, WHERE, PROCESS, VERSION, WHAT)
+(   1,<2025-03-10T00:08:51.712+0100>,<UIBK\c7261113>,<pc172-c726>,<mvrow>,<TopSpin 4.5.0>,
+      <rsr 879 from
+       1 4 "AKP-OCPF-LP16-2_full" "Z:/nmr400-ac/data/csat7142/nmr"
+       data hash MD5: 1K
+       51 28 55 0E 77 1D 7D 59 B7 4E 26 01 7D 94 2C 68>)
+##END=
+
+$$ hash MD5
+$$ F2 A4 28 19 2A D7 31 A4 7A 77 CA 2A 46 3C 7E 97

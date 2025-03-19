@@ -1,0 +1,24 @@
+##TITLE= Parameter file, TopSpin 4.5.0
+##JCAMPDX= 5.0
+##DATATYPE= Parameter Values
+##NPOINTS= 5	$$ modification sequence number
+##ORIGIN= Bruker BioSpin GmbH & Co. KG
+##OWNER= c7261113
+$$ 2025-03-10 20:04:38.730 +0100  UIBK\c7261113@pc172-c726
+$$ Z:/nmr400-ac/data/csat7142/nmr/AKP-OCPF-LP16-3_full/4/acqu2
+$$ process C:\Bruker\TopSpin4.5.0\prog\mod\getlim.exe
+##$ACQT0= 0
+##$BF1= 100.637913546
+##$FnILOOP= 0
+##$FnMODE= 6
+##$NUC1= <13C>
+##$NusJSP= 0
+##$NusT2= 1
+##$NusTD= 0
+##$O1= 9057.412
+##$ProjAngle= 0
+##$SFO1= 100.646970958
+##$SW= 199.997000270692
+##$SW_h= 20129.0922779315
+##$TD= 128
+##END=

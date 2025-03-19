@@ -1,0 +1,43 @@
+/***********************************************-*-C++-*-********/
+/*	proc_2d			18.05.2000			*/
+/****************************************************************/
+/*	Short Description :					*/
+/*	Processing AU program for 2D spectra without plotting.	*/
+/****************************************************************/
+/*	Keywords :						*/
+/*	2D without plot						*/
+/****************************************************************/
+/*	Description/Usage :					*/
+/*	Processing AU program for 2D spectra without plotting.	*/
+/****************************************************************/
+/*	Author(s) :						*/
+/*	Name		: Peter Dvortsak			*/
+/*	Organisation	: Bruker BioSpin GmbH			*/
+/*	Email		: nmr-support@bruker.com		*/
+/****************************************************************/
+/*	Name		Date	Modification:			*/
+/*	nkk	  	091020  proc_2d with xf2m for SELU	*/
+/*				HMBC processing			*/
+/****************************************************************/
+/*
+$Id:$
+*/
+
+double sw1,sw2,sf1,sf2;
+float offs1,offs2;
+
+XFB
+ERRORABORT
+XF2M
+ERRORABORT
+FETCHPARS("OFFSET",&offs2)
+FETCHPARS("SW_p",&sw2)
+FETCHPARS("SF",&sf2)
+FETCHPAR1S("OFFSET",&offs1)
+FETCHPAR1S("SW_p",&sw1)
+FETCHPAR1S("SF",&sf1)
+STOREPAR1("F1P",offs1)
+STOREPAR("F1P",offs2)
+STOREPAR1("F2P",offs1 - sw1 / sf1)
+STOREPAR("F2P",offs2 - sw2 / sf2)
+QUIT

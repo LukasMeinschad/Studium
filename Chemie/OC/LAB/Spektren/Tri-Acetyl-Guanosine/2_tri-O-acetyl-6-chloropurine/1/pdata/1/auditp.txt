@@ -1,0 +1,179 @@
+##TITLE= Audit trail, TopSpin 4.5.0
+##JCAMPDX= 5.01
+##ORIGIN= Bruker BioSpin GmbH & Co. KG
+##OWNER= c7261113
+$$ Z:/nmr400-ac/data/csat7142/nmr/AKP-OCPF-LP16-2_full/1/pdata/1/auditp.txt
+##AUDIT TRAIL=  $$ (NUMBER, WHEN, WHO, WHERE, PROCESS, VERSION, WHAT)
+(   1,<2025-03-09T21:50:02.564+0000>,<UIBK\c7261113>,<PC172-C726>,<go4>,<TopSpin 4.5.0>,
+      <acquisition in progress>)
+$$ Z:/nmr400-ac/data/csat7142/nmr/AKP-OCPF-LP16-2_full/1/audita.txt
+(   2,<2025-03-09T22:03:21.555+0000>,<UIBK\c7261113>,<PC172-C726>,<go4>,<TopSpin 4.5.0>,
+      <created by zg on 'Avance NEO' (PC172-C726) by user 'UIBK\c7261113'
+       on data set with UUID '688465e6-a94e-429e-8c12-7c6b5789b132'
+       started at 2025-03-09 21:50:02.564 +0000, POWCHK enabled, PULCHK disabled,
+       completed at 2025-03-09 22:03:21.553 +0000
+       configuration hash MD5:
+       D4 10 EC 6E BA 4A D6 BC 57 1B E8 5A 89 59 8E FA
+       double data hash MD5: 49180
+       4D 6A 90 A2 85 82 81 0C 4F 78 FD 19 10 30 E2 5A>)
+(   3,<2025-03-09T23:03:22.480+0100>,<UIBK\c7261113>,<pc172-c726>,<xwish3>,<TopSpin 4.5.0>,
+      <ICON-NMR User ID: csat7142
+       double data hash MD5: 49180
+       4D 6A 90 A2 85 82 81 0C 4F 78 FD 19 10 30 E2 5A>)
+(   4,<2025-03-09T23:03:24.073+0100>,<UIBK\c7261113>,<pc172-c726>,<proc1d>,<TopSpin 4.5.0>,
+      <Start of raw data processing
+       ef LB = 0.3 FT_mod = 6 PKNL = 1 SI = 64K
+       fid double data hash MD5: 49180
+       4D 6A 90 A2 85 82 81 0C 4F 78 FD 19 10 30 E2 5A
+       data hash MD5: 64K
+       37 73 48 5F B4 4D 41 2F 5C 60 3D DF 42 9D 2C 06>)
+$$ Z:/nmr400-ac/data/csat7142/nmr/AKP-OCPF-LP16-2_full/1/pdata/1/auditp.txt
+(   5,<2025-03-09T23:03:25.220+0100>,<UIBK\c7261113>,<pc172-c726>,<proc1d>,<TopSpin 4.5.0>,
+      <apk0
+       data hash MD5: 64K
+       3A 34 83 8B 9C 56 D3 41 DB 72 9E 33 61 D3 D4 52>)
+(   6,<2025-03-09T23:03:25.431+0100>,<UIBK\c7261113>,<pc172-c726>,<sref>,<TopSpin 4.5.0>,
+      <sref
+       data hash MD5: 64K
+       3A 34 83 8B 9C 56 D3 41 DB 72 9E 33 61 D3 D4 52>)
+(   7,<2025-03-09T23:03:25.639+0100>,<UIBK\c7261113>,<pc172-c726>,<proc1d>,<TopSpin 4.5.0>,
+      <abs ABSG = 5
+       data hash MD5: 64K
+       A5 0C CB 63 4E DA A1 2D AB AE 45 89 C0 1C 3F 70>)
+(   8,<2025-03-09T23:03:25.955+0100>,<UIBK\c7261113>,<pc172-c726>,<peak>,<TopSpin 4.5.0>,
+      <1D Peak picking
+       data hash MD5: 64K
+       A5 0C CB 63 4E DA A1 2D AB AE 45 89 C0 1C 3F 70>)
+(   9,<2025-03-09T23:03:26.485+0100>,<UIBK\c7261113>,<pc172-c726>,<xwish3>,<TopSpin 4.5.0>,
+      <ICON-NMR User ID: csat7142
+       data hash MD5: 64K
+       A5 0C CB 63 4E DA A1 2D AB AE 45 89 C0 1C 3F 70>)
+$$ /Users/lukas/Desktop/Studium/Chemie/OC/LAB/Spektren/Tri-Acetyl-Guanosine/2_tri-O-acetyl-6-chloropurine/1/pdata/1/auditp.txt
+(  10,<2025-03-11T22:16:42.018+0100>,<lukas>,<MacBookPro.telekom.ip>,<dataserver>,<TopSpin 4.4.1>,
+      <Start of interactive peak picking
+       data hash MD5: 64K
+       A5 0C CB 63 4E DA A1 2D AB AE 45 89 C0 1C 3F 70>)
+(  11,<2025-03-11T22:17:08.172+0100>,<lukas>,<MacBookPro.telekom.ip>,<peak>,<TopSpin 4.4.1>,
+      <1D Peak picking
+       data hash MD5: 64K
+       A5 0C CB 63 4E DA A1 2D AB AE 45 89 C0 1C 3F 70>)
+(  12,<2025-03-11T22:17:10.728+0100>,<lukas>,<MacBookPro.telekom.ip>,<peak>,<TopSpin 4.4.1>,
+      <1D Peak picking
+       data hash MD5: 64K
+       A5 0C CB 63 4E DA A1 2D AB AE 45 89 C0 1C 3F 70>)
+(  13,<2025-03-11T22:17:18.334+0100>,<lukas>,<MacBookPro.telekom.ip>,<peak>,<TopSpin 4.4.1>,
+      <1D Peak picking
+       data hash MD5: 64K
+       A5 0C CB 63 4E DA A1 2D AB AE 45 89 C0 1C 3F 70>)
+(  14,<2025-03-11T22:17:20.203+0100>,<lukas>,<MacBookPro.telekom.ip>,<peak>,<TopSpin 4.4.1>,
+      <1D Peak picking
+       data hash MD5: 64K
+       A5 0C CB 63 4E DA A1 2D AB AE 45 89 C0 1C 3F 70>)
+(  15,<2025-03-11T22:17:21.251+0100>,<lukas>,<MacBookPro.telekom.ip>,<peak>,<TopSpin 4.4.1>,
+      <1D Peak picking
+       data hash MD5: 64K
+       A5 0C CB 63 4E DA A1 2D AB AE 45 89 C0 1C 3F 70>)
+(  16,<2025-03-11T22:17:23.371+0100>,<lukas>,<MacBookPro.telekom.ip>,<peak>,<TopSpin 4.4.1>,
+      <1D Peak picking
+       data hash MD5: 64K
+       A5 0C CB 63 4E DA A1 2D AB AE 45 89 C0 1C 3F 70>)
+(  17,<2025-03-11T22:17:43.960+0100>,<lukas>,<MacBookPro.telekom.ip>,<peak>,<TopSpin 4.4.1>,
+      <1D Peak picking
+       data hash MD5: 64K
+       A5 0C CB 63 4E DA A1 2D AB AE 45 89 C0 1C 3F 70>)
+(  18,<2025-03-11T22:17:53.373+0100>,<lukas>,<MacBookPro.telekom.ip>,<peak>,<TopSpin 4.4.1>,
+      <1D Peak picking
+       data hash MD5: 64K
+       A5 0C CB 63 4E DA A1 2D AB AE 45 89 C0 1C 3F 70>)
+(  19,<2025-03-11T22:17:56.362+0100>,<lukas>,<MacBookPro.telekom.ip>,<peak>,<TopSpin 4.4.1>,
+      <1D Peak picking
+       data hash MD5: 64K
+       A5 0C CB 63 4E DA A1 2D AB AE 45 89 C0 1C 3F 70>)
+(  20,<2025-03-11T22:18:07.459+0100>,<lukas>,<MacBookPro.telekom.ip>,<peak>,<TopSpin 4.4.1>,
+      <1D Peak picking
+       data hash MD5: 64K
+       A5 0C CB 63 4E DA A1 2D AB AE 45 89 C0 1C 3F 70>)
+(  21,<2025-03-11T22:18:08.983+0100>,<lukas>,<MacBookPro.telekom.ip>,<peak>,<TopSpin 4.4.1>,
+      <1D Peak picking
+       data hash MD5: 64K
+       A5 0C CB 63 4E DA A1 2D AB AE 45 89 C0 1C 3F 70>)
+(  22,<2025-03-11T22:26:51.381+0100>,<lukas>,<MacBookPro.telekom.ip>,<dataserver>,<TopSpin 4.4.1>,
+      <Delete all peak picking regions
+       data hash MD5: 64K
+       A5 0C CB 63 4E DA A1 2D AB AE 45 89 C0 1C 3F 70>)
+(  23,<2025-03-11T22:26:51.386+0100>,<lukas>,<MacBookPro.telekom.ip>,<dataserver>,<TopSpin 4.4.1>,
+      <Delete peaks within defined region
+       data hash MD5: 64K
+       A5 0C CB 63 4E DA A1 2D AB AE 45 89 C0 1C 3F 70>)
+(  24,<2025-03-11T22:26:51.394+0100>,<lukas>,<MacBookPro.telekom.ip>,<dataserver>,<TopSpin 4.4.1>,
+      <Peak added manually at position 4.4180
+       data hash MD5: 64K
+       A5 0C CB 63 4E DA A1 2D AB AE 45 89 C0 1C 3F 70>)
+(  25,<2025-03-11T22:26:51.424+0100>,<lukas>,<MacBookPro.telekom.ip>,<dataserver>,<TopSpin 4.4.1>,
+      <End of interactive peak picking
+       data hash MD5: 64K
+       A5 0C CB 63 4E DA A1 2D AB AE 45 89 C0 1C 3F 70>)
+(  26,<2025-03-11T22:30:02.888+0100>,<lukas>,<MacBookPro.telekom.ip>,<dataserver>,<TopSpin 4.4.1>,
+      <INTEGRAL DELETE [8.982;1.837]
+       data hash MD5: 64K
+       A5 0C CB 63 4E DA A1 2D AB AE 45 89 C0 1C 3F 70>)
+(  27,<2025-03-11T22:30:02.897+0100>,<lukas>,<MacBookPro.telekom.ip>,<dataserver>,<TopSpin 4.4.1>,
+      <INTEGRAL DEFINE [2.153;2.099]
+       data hash MD5: 64K
+       A5 0C CB 63 4E DA A1 2D AB AE 45 89 C0 1C 3F 70>)
+(  28,<2025-03-11T22:30:02.901+0100>,<lukas>,<MacBookPro.telekom.ip>,<dataserver>,<TopSpin 4.4.1>,
+      <INTEGRAL DEFINE [2.228;2.182]
+       data hash MD5: 64K
+       A5 0C CB 63 4E DA A1 2D AB AE 45 89 C0 1C 3F 70>)
+(  29,<2025-03-11T22:30:02.905+0100>,<lukas>,<MacBookPro.telekom.ip>,<dataserver>,<TopSpin 4.4.1>,
+      <INTEGRAL DEFINE [2.707;2.616]
+       data hash MD5: 64K
+       A5 0C CB 63 4E DA A1 2D AB AE 45 89 C0 1C 3F 70>)
+(  30,<2025-03-11T22:30:02.909+0100>,<lukas>,<MacBookPro.telekom.ip>,<dataserver>,<TopSpin 4.4.1>,
+      <INTEGRAL DELETE [2.707;2.616]
+       data hash MD5: 64K
+       A5 0C CB 63 4E DA A1 2D AB AE 45 89 C0 1C 3F 70>)
+(  31,<2025-03-11T22:30:02.913+0100>,<lukas>,<MacBookPro.telekom.ip>,<dataserver>,<TopSpin 4.4.1>,
+      <INTEGRAL DEFINE [2.971;2.943]
+       data hash MD5: 64K
+       A5 0C CB 63 4E DA A1 2D AB AE 45 89 C0 1C 3F 70>)
+(  32,<2025-03-11T22:30:02.917+0100>,<lukas>,<MacBookPro.telekom.ip>,<dataserver>,<TopSpin 4.4.1>,
+      <INTEGRAL DEFINE [4.521;4.317]
+       data hash MD5: 64K
+       A5 0C CB 63 4E DA A1 2D AB AE 45 89 C0 1C 3F 70>)
+(  33,<2025-03-11T22:30:02.920+0100>,<lukas>,<MacBookPro.telekom.ip>,<dataserver>,<TopSpin 4.4.1>,
+      <INTEGRAL DEFINE [5.649;5.597]
+       data hash MD5: 64K
+       A5 0C CB 63 4E DA A1 2D AB AE 45 89 C0 1C 3F 70>)
+(  34,<2025-03-11T22:30:02.924+0100>,<lukas>,<MacBookPro.telekom.ip>,<dataserver>,<TopSpin 4.4.1>,
+      <INTEGRAL DEFINE [5.849;5.823]
+       data hash MD5: 64K
+       A5 0C CB 63 4E DA A1 2D AB AE 45 89 C0 1C 3F 70>)
+(  35,<2025-03-11T22:30:02.928+0100>,<lukas>,<MacBookPro.telekom.ip>,<dataserver>,<TopSpin 4.4.1>,
+      <INTEGRAL DEFINE [5.993;5.925]
+       data hash MD5: 64K
+       A5 0C CB 63 4E DA A1 2D AB AE 45 89 C0 1C 3F 70>)
+(  36,<2025-03-11T22:30:02.931+0100>,<lukas>,<MacBookPro.telekom.ip>,<dataserver>,<TopSpin 4.4.1>,
+      <INTEGRAL DEFINE [6.217;6.158]
+       data hash MD5: 64K
+       A5 0C CB 63 4E DA A1 2D AB AE 45 89 C0 1C 3F 70>)
+(  37,<2025-03-11T22:30:02.935+0100>,<lukas>,<MacBookPro.telekom.ip>,<dataserver>,<TopSpin 4.4.1>,
+      <INTEGRAL DEFINE [7.190;7.088]
+       data hash MD5: 64K
+       A5 0C CB 63 4E DA A1 2D AB AE 45 89 C0 1C 3F 70>)
+(  38,<2025-03-11T22:30:02.939+0100>,<lukas>,<MacBookPro.telekom.ip>,<dataserver>,<TopSpin 4.4.1>,
+      <INTEGRAL DEFINE [8.472;8.403]
+       data hash MD5: 64K
+       A5 0C CB 63 4E DA A1 2D AB AE 45 89 C0 1C 3F 70>)
+(  39,<2025-03-11T22:30:02.944+0100>,<lukas>,<MacBookPro.telekom.ip>,<dataserver>,<TopSpin 4.4.1>,
+      <INTEGRAL NORMALIZE 18.000000
+       data hash MD5: 64K
+       A5 0C CB 63 4E DA A1 2D AB AE 45 89 C0 1C 3F 70>)
+(  40,<2025-03-11T22:30:02.949+0100>,<lukas>,<MacBookPro.telekom.ip>,<dataserver>,<TopSpin 4.4.1>,
+      <INTEGRAL DELETE [2.971;2.943]
+       data hash MD5: 64K
+       A5 0C CB 63 4E DA A1 2D AB AE 45 89 C0 1C 3F 70>)
+##END=
+
+$$ hash MD5
+$$ CD CF D1 1D F7 96 5A 5B 95 71 EF 53 E2 59 04 CF

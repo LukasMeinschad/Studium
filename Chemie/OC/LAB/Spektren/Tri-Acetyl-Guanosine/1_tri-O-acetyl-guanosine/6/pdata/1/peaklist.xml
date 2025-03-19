@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PeakList modified="2025-03-11T22:01:32">
+  <PeakList1D>
+    <PeakList1DHeader creator="lukas" date="2025-03-11T22:01:32" expNo="6" name="1_tri-O-acetyl-guanosine" owner="" procNo="1" source="/Users/lukas/Desktop/Studium/Chemie/OC/LAB/Spektren/Tri-Acetyl-Guanosine">
+      <PeakPickDetails>F1=170.789223ppm, F2=170.424855ppm, MI=2.14cm, MAXI=2.63cm, PC=1.400
+      </PeakPickDetails>
+    </PeakList1DHeader>
+    <Peak1D F1="170.558243" intensity="2.453403" type="0"/>
+  </PeakList1D>
+  <PeakList1D>
+    <PeakList1DHeader creator="lukas" date="2025-03-11T22:01:32" expNo="6" name="1_tri-O-acetyl-guanosine" owner="" procNo="1" source="/Users/lukas/Desktop/Studium/Chemie/OC/LAB/Spektren/Tri-Acetyl-Guanosine">
+      <PeakPickDetails>F1=169.977676ppm, F2=169.878303ppm, MI=2.10cm, MAXI=2.54cm, PC=1.400
+      </PeakPickDetails>
+    </PeakList1DHeader>
+    <Peak1D F1="169.908316" intensity="2.325765" type="0"/>
+  </PeakList1D>
+  <PeakList1D>
+    <PeakList1DHeader creator="lukas" date="2025-03-11T22:01:32" expNo="6" name="1_tri-O-acetyl-guanosine" owner="" procNo="1" source="/Users/lukas/Desktop/Studium/Chemie/OC/LAB/Spektren/Tri-Acetyl-Guanosine">
+      <PeakPickDetails>F1=169.836898ppm, F2=169.646433ppm, MI=1.90cm, MAXI=2.42cm, PC=1.400
+      </PeakPickDetails>
+    </PeakList1DHeader>
+    <Peak1D F1="169.741744" intensity="2.29411" type="0"/>
+  </PeakList1D>
+  <PeakList1D>
+    <PeakList1DHeader creator="lukas" date="2025-03-11T22:01:32" expNo="6" name="1_tri-O-acetyl-guanosine" owner="" procNo="1" source="/Users/lukas/Desktop/Studium/Chemie/OC/LAB/Spektren/Tri-Acetyl-Guanosine">
+      <PeakPickDetails>F1=158.836261ppm, F2=156.053814ppm, MI=1.72cm, MAXI=2.41cm, PC=1.400
+      </PeakPickDetails>
+    </PeakList1DHeader>
+    <Peak1D F1="157.099534" intensity="2.217578" type="0"/>
+  </PeakList1D>
+  <PeakList1D>
+    <PeakList1DHeader creator="lukas" date="2025-03-11T22:01:32" expNo="6" name="1_tri-O-acetyl-guanosine" owner="" procNo="1" source="/Users/lukas/Desktop/Studium/Chemie/OC/LAB/Spektren/Tri-Acetyl-Guanosine">
+      <PeakPickDetails>F1=155.698608ppm, F2=152.146549ppm, MI=1.84cm, MAXI=2.87cm, PC=1.400
+      </PeakPickDetails>
+    </PeakList1DHeader>
+    <Peak1D F1="154.377914" intensity="2.656192" type="0"/>
+  </PeakList1D>
+  <PeakList1D>
+    <PeakList1DHeader creator="lukas" date="2025-03-11T22:01:32" expNo="6" name="1_tri-O-acetyl-guanosine" owner="" procNo="1" source="/Users/lukas/Desktop/Studium/Chemie/OC/LAB/Spektren/Tri-Acetyl-Guanosine">
+      <PeakPickDetails>F1=152.146549ppm, F2=149.304901ppm, MI=1.05cm, MAXI=1.99cm, PC=1.400
+      </PeakPickDetails>
+    </PeakList1DHeader>
+    <Peak1D F1="151.575074" intensity="1.666766" type="0"/>
+  </PeakList1D>
+  <PeakList1D>
+    <PeakList1DHeader creator="lukas" date="2025-03-11T22:01:32" expNo="6" name="1_tri-O-acetyl-guanosine" owner="" procNo="1" source="/Users/lukas/Desktop/Studium/Chemie/OC/LAB/Spektren/Tri-Acetyl-Guanosine">
+      <PeakPickDetails>F1=139.595939ppm, F2=134.859859ppm, MI=1.09cm, MAXI=1.96cm, PC=1.400
+      </PeakPickDetails>
+    </PeakList1DHeader>
+    <Peak1D F1="136.105281" intensity="1.765007" type="0"/>
+  </PeakList1D>
+  <PeakList1D>
+    <PeakList1DHeader creator="lukas" date="2025-03-11T22:01:32" expNo="6" name="1_tri-O-acetyl-guanosine" owner="" procNo="1" source="/Users/lukas/Desktop/Studium/Chemie/OC/LAB/Spektren/Tri-Acetyl-Guanosine">
+      <PeakPickDetails>F1=119.408400ppm, F2=115.974743ppm, MI=0.75cm, MAXI=1.57cm, PC=1.400
+      </PeakPickDetails>
+    </PeakList1DHeader>
+    <Peak1D F1="117.272193" intensity="1.517239" type="0"/>
+  </PeakList1D>
+  <PeakList1D>
+    <PeakList1DHeader creator="lukas" date="2025-03-11T22:01:32" expNo="6" name="1_tri-O-acetyl-guanosine" owner="" procNo="1" source="/Users/lukas/Desktop/Studium/Chemie/OC/LAB/Spektren/Tri-Acetyl-Guanosine">
+      <PeakPickDetails>F1=86.315046ppm, F2=84.006207ppm, MI=1.01cm, MAXI=2.37cm, PC=1.400
+      </PeakPickDetails>
+    </PeakList1DHeader>
+    <Peak1D F1="84.884347" intensity="2.111593" type="0"/>
+  </PeakList1D>
+  <PeakList1D>
+    <PeakList1DHeader creator="lukas" date="2025-03-11T22:01:32" expNo="6" name="1_tri-O-acetyl-guanosine" owner="" procNo="1" source="/Users/lukas/Desktop/Studium/Chemie/OC/LAB/Spektren/Tri-Acetyl-Guanosine">
+      <PeakPickDetails>F1=81.460565ppm, F2=79.092525ppm, MI=1.76cm, MAXI=2.39cm, PC=1.400
+      </PeakPickDetails>
+    </PeakList1DHeader>
+    <Peak1D F1="80.009034" intensity="2.202391" type="0"/>
+  </PeakList1D>
+  <PeakList1D>
+    <PeakList1DHeader creator="lukas" date="2025-03-11T22:01:32" expNo="6" name="1_tri-O-acetyl-guanosine" owner="" procNo="1" source="/Users/lukas/Desktop/Studium/Chemie/OC/LAB/Spektren/Tri-Acetyl-Guanosine">
+      <PeakPickDetails>F1=73.231627ppm, F2=72.047607ppm, MI=1.58cm, MAXI=2.54cm, PC=1.400
+      </PeakPickDetails>
+    </PeakList1DHeader>
+    <Peak1D F1="72.519463" intensity="2.256924" type="0"/>
+  </PeakList1D>
+  <PeakList1D>
+    <PeakList1DHeader creator="lukas" date="2025-03-11T22:01:32" expNo="6" name="1_tri-O-acetyl-guanosine" owner="" procNo="1" source="/Users/lukas/Desktop/Studium/Chemie/OC/LAB/Spektren/Tri-Acetyl-Guanosine">
+      <PeakPickDetails>F1=71.514798ppm, F2=70.034773ppm, MI=1.06cm, MAXI=2.63cm, PC=1.400
+      </PeakPickDetails>
+    </PeakList1DHeader>
+    <Peak1D F1="70.77708" intensity="2.414769" type="0"/>
+  </PeakList1D>
+  <PeakList1D>
+    <PeakList1DHeader creator="lukas" date="2025-03-11T22:01:32" expNo="6" name="1_tri-O-acetyl-guanosine" owner="" procNo="1" source="/Users/lukas/Desktop/Studium/Chemie/OC/LAB/Spektren/Tri-Acetyl-Guanosine">
+      <PeakPickDetails>F1=63.996272ppm, F2=62.930654ppm, MI=1.27cm, MAXI=2.12cm, PC=1.400
+      </PeakPickDetails>
+    </PeakList1DHeader>
+    <Peak1D F1="63.543863" intensity="1.833675" type="0"/>
+  </PeakList1D>
+  <PeakList1D>
+    <PeakList1DHeader creator="lukas" date="2025-03-11T22:01:32" expNo="6" name="1_tri-O-acetyl-guanosine" owner="" procNo="1" source="/Users/lukas/Desktop/Studium/Chemie/OC/LAB/Spektren/Tri-Acetyl-Guanosine">
+      <PeakPickDetails>F1=21.371558ppm, F2=20.069136ppm, MI=1.14cm, MAXI=3.81cm, PC=1.400
+      </PeakPickDetails>
+    </PeakList1DHeader>
+    <Peak1D F1="20.981926" intensity="3.516104" type="0"/>
+    <Peak1D F1="20.834818" intensity="3.382184" type="0"/>
+    <Peak1D F1="20.646942" intensity="3.287746" type="0"/>
+  </PeakList1D>
+  <PeakList1D>
+    <PeakList1DHeader creator="lukas@MacBookPro.telekom.ip" date="2025-03-11T22:01:46" expNo="6" name="1_tri-O-acetyl-guanosine" owner="lukas" procNo="1" source="/Users/lukas/Desktop/Studium/Chemie/OC/LAB/Spektren/Tri-Acetyl-Guanosine">
+      <PeakPickDetails>Manually picked peaks
+</PeakPickDetails>
+    </PeakList1DHeader>
+    <Peak1D F1="40.13827245324345" intensity="1.1851762163121173" type="1"/>
+  </PeakList1D>
+</PeakList>

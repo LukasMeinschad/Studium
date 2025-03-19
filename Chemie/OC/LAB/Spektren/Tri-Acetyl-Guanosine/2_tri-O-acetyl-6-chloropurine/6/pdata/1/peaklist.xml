@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PeakList modified="2025-03-11T22:46:59">
+  <PeakList1D>
+    <PeakList1DHeader creator="lukas" date="2025-03-11T22:46:43" expNo="6" name="2_tri-O-acetyl-6-chloropurine" owner="" procNo="1" source="/Users/lukas/Desktop/Studium/Chemie/OC/LAB/Spektren/Tri-Acetyl-Guanosine">
+      <PeakPickDetails>F1=173.214767ppm, F2=138.360576ppm, MI=0.17cm, MAXI=0.91cm, PC=1.400
+      </PeakPickDetails>
+    </PeakList1DHeader>
+    <Peak1D F1="170.557093" intensity="0.7207312" type="0"/>
+    <Peak1D F1="169.892501" intensity="0.6746188" type="0"/>
+    <Peak1D F1="169.743264" intensity="0.6833421" type="0"/>
+    <Peak1D F1="160.365746" intensity="0.7228667" type="0"/>
+    <Peak1D F1="154.150193" intensity="0.4826976" type="0"/>
+    <Peak1D F1="150.370577" intensity="0.5095445" type="0"/>
+    <Peak1D F1="141.735256" intensity="0.6373398" type="0"/>
+  </PeakList1D>
+  <PeakList1D>
+    <PeakList1DHeader creator="lukas" date="2025-03-11T22:46:43" expNo="6" name="2_tri-O-acetyl-6-chloropurine" owner="" procNo="1" source="/Users/lukas/Desktop/Studium/Chemie/OC/LAB/Spektren/Tri-Acetyl-Guanosine">
+      <PeakPickDetails>F1=127.798700ppm, F2=121.813637ppm, MI=0.17cm, MAXI=0.71cm, PC=1.400
+      </PeakPickDetails>
+    </PeakList1DHeader>
+    <Peak1D F1="123.96053" intensity="0.5162787" type="0"/>
+  </PeakList1D>
+  <PeakList1D>
+    <PeakList1DHeader creator="lukas" date="2025-03-11T22:46:43" expNo="6" name="2_tri-O-acetyl-6-chloropurine" owner="" procNo="1" source="/Users/lukas/Desktop/Studium/Chemie/OC/LAB/Spektren/Tri-Acetyl-Guanosine">
+      <PeakPickDetails>F1=87.311509ppm, F2=59.850631ppm, MI=0.14cm, MAXI=1.02cm, PC=1.400
+      </PeakPickDetails>
+    </PeakList1DHeader>
+    <Peak1D F1="85.342043" intensity="0.7128932" type="0"/>
+    <Peak1D F1="80.162897" intensity="0.7921399" type="0"/>
+    <Peak1D F1="72.356589" intensity="0.7943449" type="0"/>
+    <Peak1D F1="70.711747" intensity="0.8258872" type="0"/>
+    <Peak1D F1="63.413493" intensity="0.6342449" type="0"/>
+  </PeakList1D>
+  <PeakList1D>
+    <PeakList1DHeader creator="lukas" date="2025-03-11T22:46:43" expNo="6" name="2_tri-O-acetyl-6-chloropurine" owner="" procNo="1" source="/Users/lukas/Desktop/Studium/Chemie/OC/LAB/Spektren/Tri-Acetyl-Guanosine">
+      <PeakPickDetails>F1=23.940252ppm, F2=17.955189ppm, MI=0.65cm, MAXI=1.33cm, PC=1.400
+      </PeakPickDetails>
+    </PeakList1DHeader>
+    <Peak1D F1="20.980559" intensity="1.221852" type="0"/>
+    <Peak1D F1="20.848102" intensity="1.077482" type="0"/>
+    <Peak1D F1="20.655728" intensity="1.16672" type="0"/>
+  </PeakList1D>
+  <PeakList1D>
+    <PeakList1DHeader creator="lukas@MacBookPro.telekom.ip" date="2025-03-11T22:47:10" expNo="6" name="2_tri-O-acetyl-6-chloropurine" owner="lukas" procNo="1" source="/Users/lukas/Desktop/Studium/Chemie/OC/LAB/Spektren/Tri-Acetyl-Guanosine">
+      <PeakPickDetails>Manually picked peaks
+</PeakPickDetails>
+    </PeakList1DHeader>
+    <Peak1D F1="40.00939241795616" intensity="12.490765240229832" type="1"/>
+  </PeakList1D>
+</PeakList>

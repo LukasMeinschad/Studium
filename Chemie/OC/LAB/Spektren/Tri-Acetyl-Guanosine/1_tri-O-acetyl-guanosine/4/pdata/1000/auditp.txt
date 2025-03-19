@@ -1,0 +1,97 @@
+##TITLE= Audit trail, TopSpin 4.5.0
+##JCAMPDX= 5.01
+##ORIGIN= Bruker BioSpin GmbH & Co. KG
+##OWNER= c7261113
+$$ Z:/nmr400-ac/data/csat7142/nmr/AKP-OCPF-LP16-1_full/4/pdata/1000/auditp.txt
+##AUDIT TRAIL=  $$ (NUMBER, WHEN, WHO, WHERE, PROCESS, VERSION, WHAT)
+(   1,<2025-03-10T04:18:27.298+0100>,<UIBK\c7261113>,<pc172-c726>,<mvrow>,<TopSpin 4.5.0>,
+      <rsr 42 from
+       1 4 "AKP-OCPF-LP16-1_full" "Z:/nmr400-ac/data/csat7142/nmr"
+       data hash MD5: 1K
+       6A B9 7C C2 E0 BE F1 93 79 4B 51 A4 6C 15 17 9F>)
+(   2,<2025-03-10T04:18:28.117+0100>,<UIBK\c7261113>,<pc172-c726>,<proc1d>,<TopSpin 4.5.0>,
+      <add DC = 1 DATMOD = 1 of
+       1000 4 "AKP-OCPF-LP16-1_full" "Z:/nmr400-ac/data/csat7142/nmr"
+       1001 4 "AKP-OCPF-LP16-1_full" "Z:/nmr400-ac/data/csat7142/nmr"
+       data hash MD5: 1K
+       35 29 38 E7 C0 87 37 98 02 B0 68 45 7B D2 29 6E>)
+(   3,<2025-03-10T04:18:28.718+0100>,<UIBK\c7261113>,<pc172-c726>,<proc1d>,<TopSpin 4.5.0>,
+      <add DC = 1 DATMOD = 1 of
+       1000 4 "AKP-OCPF-LP16-1_full" "Z:/nmr400-ac/data/csat7142/nmr"
+       1001 4 "AKP-OCPF-LP16-1_full" "Z:/nmr400-ac/data/csat7142/nmr"
+       data hash MD5: 1K
+       BB B0 48 4D A6 98 30 DE AB 41 38 C5 FB D7 8E 5B>)
+(   4,<2025-03-10T04:18:29.566+0100>,<UIBK\c7261113>,<pc172-c726>,<proc1d>,<TopSpin 4.5.0>,
+      <add DC = 1 DATMOD = 1 of
+       1000 4 "AKP-OCPF-LP16-1_full" "Z:/nmr400-ac/data/csat7142/nmr"
+       1001 4 "AKP-OCPF-LP16-1_full" "Z:/nmr400-ac/data/csat7142/nmr"
+       data hash MD5: 1K
+       F2 F1 2F 65 8C F2 B3 99 26 B1 F6 7D 40 39 03 B0>)
+(   5,<2025-03-10T04:18:30.100+0100>,<UIBK\c7261113>,<pc172-c726>,<proc1d>,<TopSpin 4.5.0>,
+      <add DC = 1 DATMOD = 1 of
+       1000 4 "AKP-OCPF-LP16-1_full" "Z:/nmr400-ac/data/csat7142/nmr"
+       1001 4 "AKP-OCPF-LP16-1_full" "Z:/nmr400-ac/data/csat7142/nmr"
+       data hash MD5: 1K
+       28 55 58 33 A3 F7 27 02 7B 09 9D D4 EE 8C 4D 4F>)
+(   6,<2025-03-10T04:18:30.677+0100>,<UIBK\c7261113>,<pc172-c726>,<proc1d>,<TopSpin 4.5.0>,
+      <add DC = 1 DATMOD = 1 of
+       1000 4 "AKP-OCPF-LP16-1_full" "Z:/nmr400-ac/data/csat7142/nmr"
+       1001 4 "AKP-OCPF-LP16-1_full" "Z:/nmr400-ac/data/csat7142/nmr"
+       data hash MD5: 1K
+       B6 C8 88 1C 4F C1 24 B6 0F 3B 86 0A EC CF 1C 29>)
+(   7,<2025-03-10T04:18:31.342+0100>,<UIBK\c7261113>,<pc172-c726>,<proc1d>,<TopSpin 4.5.0>,
+      <add DC = 1 DATMOD = 1 of
+       1000 4 "AKP-OCPF-LP16-1_full" "Z:/nmr400-ac/data/csat7142/nmr"
+       1001 4 "AKP-OCPF-LP16-1_full" "Z:/nmr400-ac/data/csat7142/nmr"
+       data hash MD5: 1K
+       46 8A 2A 4E E9 A5 2B 52 5B D5 52 3E 2D F7 8F 3D>)
+(   8,<2025-03-10T04:18:31.877+0100>,<UIBK\c7261113>,<pc172-c726>,<proc1d>,<TopSpin 4.5.0>,
+      <add DC = 1 DATMOD = 1 of
+       1000 4 "AKP-OCPF-LP16-1_full" "Z:/nmr400-ac/data/csat7142/nmr"
+       1001 4 "AKP-OCPF-LP16-1_full" "Z:/nmr400-ac/data/csat7142/nmr"
+       data hash MD5: 1K
+       24 4B DC 48 9D 8A 01 BA 00 BA E8 69 46 CD 4C FB>)
+(   9,<2025-03-10T04:18:32.526+0100>,<UIBK\c7261113>,<pc172-c726>,<proc1d>,<TopSpin 4.5.0>,
+      <add DC = 1 DATMOD = 1 of
+       1000 4 "AKP-OCPF-LP16-1_full" "Z:/nmr400-ac/data/csat7142/nmr"
+       1001 4 "AKP-OCPF-LP16-1_full" "Z:/nmr400-ac/data/csat7142/nmr"
+       data hash MD5: 1K
+       36 91 84 D2 04 A6 4C 1E 09 D8 5E 71 18 F8 C6 4F>)
+(  10,<2025-03-10T04:18:33.106+0100>,<UIBK\c7261113>,<pc172-c726>,<proc1d>,<TopSpin 4.5.0>,
+      <add DC = 1 DATMOD = 1 of
+       1000 4 "AKP-OCPF-LP16-1_full" "Z:/nmr400-ac/data/csat7142/nmr"
+       1001 4 "AKP-OCPF-LP16-1_full" "Z:/nmr400-ac/data/csat7142/nmr"
+       data hash MD5: 1K
+       B0 29 D3 AC B3 3A D9 ED 70 19 84 6A E4 68 48 95>)
+(  11,<2025-03-10T04:18:33.629+0100>,<UIBK\c7261113>,<pc172-c726>,<proc1d>,<TopSpin 4.5.0>,
+      <add DC = 1 DATMOD = 1 of
+       1000 4 "AKP-OCPF-LP16-1_full" "Z:/nmr400-ac/data/csat7142/nmr"
+       1001 4 "AKP-OCPF-LP16-1_full" "Z:/nmr400-ac/data/csat7142/nmr"
+       data hash MD5: 1K
+       8F BA 7D 1D 7F 31 4F 56 F7 DF 7E 99 E3 8B CE 55>)
+(  12,<2025-03-10T04:18:34.280+0100>,<UIBK\c7261113>,<pc172-c726>,<proc1d>,<TopSpin 4.5.0>,
+      <add DC = 1 DATMOD = 1 of
+       1000 4 "AKP-OCPF-LP16-1_full" "Z:/nmr400-ac/data/csat7142/nmr"
+       1001 4 "AKP-OCPF-LP16-1_full" "Z:/nmr400-ac/data/csat7142/nmr"
+       data hash MD5: 1K
+       A8 B3 A7 14 AC F3 53 18 57 7B B4 A0 2B A7 69 1D>)
+(  13,<2025-03-10T04:18:35.007+0100>,<UIBK\c7261113>,<pc172-c726>,<proc1d>,<TopSpin 4.5.0>,
+      <add DC = 1 DATMOD = 1 of
+       1000 4 "AKP-OCPF-LP16-1_full" "Z:/nmr400-ac/data/csat7142/nmr"
+       1001 4 "AKP-OCPF-LP16-1_full" "Z:/nmr400-ac/data/csat7142/nmr"
+       data hash MD5: 1K
+       3D E9 8D C9 9F C7 AB D2 98 59 56 01 38 E2 95 64>)
+(  14,<2025-03-10T04:18:35.621+0100>,<UIBK\c7261113>,<pc172-c726>,<proc1d>,<TopSpin 4.5.0>,
+      <add DC = 1 DATMOD = 1 of
+       1000 4 "AKP-OCPF-LP16-1_full" "Z:/nmr400-ac/data/csat7142/nmr"
+       1001 4 "AKP-OCPF-LP16-1_full" "Z:/nmr400-ac/data/csat7142/nmr"
+       data hash MD5: 1K
+       BD 16 49 24 90 7C 93 87 CA 76 4A F1 4C BD 9F CD>)
+(  15,<2025-03-10T04:18:35.859+0100>,<UIBK\c7261113>,<pc172-c726>,<proc1d>,<TopSpin 4.5.0>,
+      <apk
+       data hash MD5: 1K
+       EB 58 6B 2A 4E 7C 4A 8C 85 E2 D8 9F F3 C4 79 E0>)
+##END=
+
+$$ hash MD5
+$$ E8 08 EC C8 C2 DF CF 24 86 24 47 C6 55 85 C3 BA

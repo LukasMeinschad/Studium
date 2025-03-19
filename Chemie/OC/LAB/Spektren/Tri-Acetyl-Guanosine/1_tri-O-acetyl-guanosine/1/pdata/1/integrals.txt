@@ -1,0 +1,14 @@
+   Current data set:
+   NAME =	1_tri-O-acetyl-guanosine	EXPNO =	1	PROCNO = 1
+   DU   =	/Users/lukas/Desktop/Studium/Chemie/OC/LAB/Spektren/Tri-Acetyl-Guanosine
+
+   Number   Integrated Region     Integral
+     1     10.808     10.749         0.94856
+     2      7.966      7.916         1.00033
+     3      6.666      6.462         1.94662
+     4      6.016      5.976         0.98366
+     5      5.824      5.775         0.99162
+     6      5.524      5.482         0.98781
+     7      4.425      4.214         3.11377
+     8      2.133      2.100         2.97115
+     9      2.077      2.007         6.05648

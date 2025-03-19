@@ -1,0 +1,14 @@
+   Current data set:
+   NAME =	2_tri-O-acetyl-6-chloropurine	EXPNO =	1	PROCNO = 1
+   DU   =	/Users/lukas/Desktop/Studium/Chemie/OC/LAB/Spektren/Tri-Acetyl-Guanosine
+
+   Number   Integrated Region     Integral
+     1      8.472      8.403         0.96211
+     2      7.190      7.088         1.74683
+     3      6.217      6.158         0.96165
+     4      5.993      5.925         0.99658
+     5      5.849      5.823         0.27986
+     6      5.649      5.597         0.94855
+     7      4.521      4.317         3.16455
+     8      2.228      2.182         3.06011
+     9      2.153      2.099         5.87976

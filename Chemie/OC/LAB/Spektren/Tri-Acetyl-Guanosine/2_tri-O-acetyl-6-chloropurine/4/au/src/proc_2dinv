@@ -1,0 +1,236 @@
+/***********************************************-*-C++-*-********/
+/*	proc_2dinv		18.05.2000			*/
+/****************************************************************/
+/*	Short Description :					*/
+/*	Processes and plots 2D inverse type spectra.  		*/
+/****************************************************************/
+/*	Keywords :						*/
+/*	2D inverse HMQC HSQC					*/
+/****************************************************************/
+/*	Description/Usage :					*/
+/*	Processing AU program for 2D inverse type spectra. 	*/
+/*	If you want to use your individual plot layout, you	*/
+/*	can define it within TopSpin with the command 'layout'.	*/
+/*	If no layout is defined, the default '2D_inv.xwp'	*/
+/*	is used.						*/
+/*	The phase in F2 is determined by 2D peak picking   	*/
+/*	followed by APK. The phase in F1 is calculated with	*/
+/*	the AU program calcphinv.				*/
+/****************************************************************/
+/*	Author(s) :						*/
+/*	Name		: Peter Dvortsak, Rainer Kerssebaum,	*/
+/*			  Ruediger Weisemann, Mike Engelhardt,	*/
+/*			  Sven Cunskis				*/
+/*	Organisation	: Bruker BioSpin GmbH			*/
+/*	Email		: nmr-support@bruker.com	*/
+/****************************************************************/
+/*	Name		Date	Modification:			*/
+/*	pdv		910901	created				*/
+/*	eng		000418	set plot limits			*/
+/*	rke,rwe,eng	000503	calls AU program calcphinv 	*/
+/*	eng		000518	set projections			*/
+/*      pdv		000920  perform phase correction in f2 	*/
+/*      svcu		000920  use XWIN-PLOT for plotting 	*/
+/*	svcu		040127	removed VIEWDATA		*/
+/*	svcu		041001	increase print_to_file options	*/
+/*	wem,svcu	060530	optimized functionality		*/
+/*	wem		070418	convertpeaklist			*/
+/*	ge		071211	readPeakList			*/
+/*	wem		141229	care of NUS data		*/
+/****************************************************************/
+/*
+$Id:$
+*/
+
+/*********************************************/
+/* Declare variables */
+    char xwlay[PATH_MAX], portf[PATH_MAX];
+    int  mc2, fntype;
+    int  irow,s_procno,nprocno;
+    double sw1,sw2,sf1,sf2,sum1,sum2;
+    float offs1,offs2,phc0,phc1;
+
+    portf[0] = 0;
+    nprocno  = 1000;
+    s_procno = procno;
+
+
+/*********************************************/
+/* Declare filenames etc. for the portfolio file handling */
+    DECLARE_PORTFOLIO;
+
+
+/*********************************************/
+/* processing */
+    XFB;
+    ERRORABORT;
+    XF2M;
+
+
+/*********************************************/
+/* use aquisition range for the peak picking limits */
+    FETCHPARS("OFFSET",&offs2);
+    FETCHPARS("SW_p",&sw2);
+    FETCHPARS("SF",&sf2);
+    FETCHPAR1S("OFFSET",&offs1);
+    FETCHPAR1S("SW_p",&sw1);
+    FETCHPAR1S("SF",&sf1);
+    sum1 = offs1 - sw1 / sf1;
+    sum2 = offs2 - sw2 / sf2;
+    STOREPAR1("F1P",offs1);
+    STOREPAR("F1P",offs2);
+    STOREPAR1("F2P",sum1);
+    STOREPAR("F2P",sum2);
+
+
+/*********************************************/
+/* create the pp file on pos and neg peaks  */
+    RVPP(nprocno);
+    ERRORABORT;
+    DATASET(name,expno,nprocno,disk,user);
+    STOREPAR("F1P",offs1);
+    STOREPAR("F2P",sum1);
+    STOREPAR("CY",100.);
+    STOREPAR("PSIGN",0);
+    STOREPAR("PC",1.4);
+
+    PP;
+    ERRORABORT;
+
+
+/*********************************************/
+/* open and read the pp files  */
+    irow = readPeakList(PROCPATH(0));
+
+    if (irow < 0)
+    {
+	Proc_err(DEF_ERR_OPT, "%s, phase correction aborted", getPeakError());
+	ABORT;
+    }
+
+    if (irow == 0)
+    {
+	Proc_err(DEF_ERR_OPT,
+		 "no peak was found in the 2D file, phase correction aborted");
+	ABORT;
+    }
+
+    if (irow == 1)
+    {
+	Proc_err(DEF_ERR_OPT,
+		 "only one peak was found in the 2D file, phase correction aborted");
+	ABORT;
+    }
+
+
+    DATASET(name,expno,s_procno,disk,user);
+    XFB;
+    ERRORABORT;
+    FETCHPAR1S("MC2",&mc2);
+
+    if (mc2 > 0  &&  access(PROCPATH("2ir"), F_OK))
+    {
+	FETCHPARS("FnTYPE",&fntype);
+
+	if (fntype == 2)
+	{
+	    DELETEIMAGINARYDATA(name, expno, procno, disk, user)
+	    XHT2
+	}
+    }
+
+
+/*********************************************/
+/* add the selected rows in the procno 1000 */
+    RSR(getPeakAddress(0),nprocno);
+    ERRORABORT;
+    DATASET(name,expno,nprocno,disk,user);
+    DATASET2(name,expno,nprocno,disk,user);
+    DATASET3(name,expno,nprocno + 1,disk,user);
+    STOREPAR("DATMOD",1);
+    STOREPAR("DC",1.0);
+
+    for (i1 = 1; i1 < irow; i1++)
+    {
+	DATASET(name,expno,s_procno,disk,user);
+	RSR(getPeakAddress(i1),nprocno + 1);
+	ERRORABORT;
+	DATASET(name,expno,nprocno,disk,user);
+	ADD;
+	ERRORABORT;
+    }
+
+    freePeakList();
+
+/*********************************************/
+/* perform the phase correction */
+    APK;
+    ERRORABORT;
+    FETCHPAR("PHC0",&phc0);
+    FETCHPAR("PHC1",&phc1);
+
+    DATASET(name,expno,s_procno,disk,user);
+    phc0 = fmod(phc0,360.);
+    STOREPAR("PHC0",phc0);
+    STOREPAR("PHC1",phc1);
+
+
+/*********************************************/
+/* processing */
+    XFB;
+    ERRORABORT;
+    ABS2;
+    ABS1;
+    LEVCALC;
+
+
+/*********************************************/
+/* If no layout is defined the default layout will be used  */
+    FETCHPAR("LAYOUT",&xwlay);
+    if (xwlay[0] == '\0')
+    {
+	STOREPAR("LAYOUT","+/2D_inv.xwp");
+    }
+
+
+/*********************************************/
+/* set F2 reference for plotting. If no dataset is	*/
+/* defined the positive F2 projection is used		*/
+    GETCURDATA2;
+    if (AUERR < 0 || access(PROCPATH2("1r"), F_OK))
+    {
+	RHPP(98);
+	DATASET2(name, expno, 98, disk, user);
+	GETCURDATA2;
+    }
+
+
+/*********************************************/
+/* Create and open portfolio file portf */
+    strcpy(portf, PROCPATH("portf"));
+    CREATE_PORTFOLIO(portf);
+
+/*********************************************/
+/* The 2D dataset is written first to the portfolio file */
+    ADD_CURDAT_TO_PORTFOLIO;
+
+/*********************************************/
+/* Now add the F2 projection (2nd dataset) to the portfolio file */
+    ADD_TO_PORTFOLIO(disk2,user2,name2,expno2,procno2);
+
+/*********************************************/
+/* Close protfolio file */
+    CLOSE_PORTFOLIO;
+
+/*********************************************/
+/* Plot with two datasets defined in the portfolio. This	*/
+/* command uses the portfolio file specified in the		*/
+/* CREATE_PORTFOLIO command			*/
+    AUTOPLOT_WITH_PORTFOLIO;
+
+/*********************************************/
+/* Adds include file 'printtofile' that manage	*/
+/* the 'plot_to_file' information		*/
+#include <inc/printtofile>
+
+    QUIT

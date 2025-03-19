@@ -1,0 +1,43 @@
+
+New TopShim run:
+
+version = topshim 4.5.0
+date = 2025-03-11
+time = 10:56:41.371
+command = topshim rga convcomp
+
+FINE SHIMMING
+
+Parameters:
+
+probe = Z163739_0276
+solvent = DMSO
+shim nucleus = 2H
+nucleus optimised for = 1H
+o1p (from lock) = 2.49 ppm
+
+Results:
+
+
+1D Shimming:
+Iteration 1: LSQ Before= 2.870 Hz, Target= 0.289 Hz, After= 0.355 Hz
+Shim succeeded
+
+Lineshape quality factor (1D spectrum, spinning) =  0.355 Hz (FWHM = 0.30 Hz)
+
+shim changes: 
+Z	+62
+Z2	+56
+Z3	-40
+Z4	+180
+Z5	+87
+Z6	+20
+Z7	-1118
+Z8	+2183
+
+duration = 40 sec
+completed successfully
+finished Tue Mar 11 10:57:20 2025
+
+
+========================================================================

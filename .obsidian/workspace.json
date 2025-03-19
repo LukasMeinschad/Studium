@@ -1,0 +1,289 @@
+{
+  "main": {
+    "id": "1a3c40dcf0dfa9d7",
+    "type": "split",
+    "children": [
+      {
+        "id": "76e3cd9e1762b42f",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "a56af79ca4320353",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Chemie/Physikalische_Chemie/Seminar/X-Ray Diffraction.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "X-Ray Diffraction"
+            }
+          },
+          {
+            "id": "158852cabfc79c7f",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.7.4"
+              },
+              "icon": "lucide-file",
+              "title": "Release Notes 1.7.4"
+            }
+          },
+          {
+            "id": "adeca5c32b5c8a20",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "MD-Part.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "MD-Part"
+            }
+          },
+          {
+            "id": "53ce233430ad244b",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Chemie/Physikalische_Chemie/VU_Festkörper/Mitschriften/Chapter 6 Heat Capacity.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Chapter 6 Heat Capacity"
+            }
+          },
+          {
+            "id": "2e9314982f6334ee",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Chemie/Physikalische_Chemie/VU_Festkörper/Skript_Lukas/Chapter 4 Crystal Binding.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Chapter 4 Crystal Binding"
+            }
+          },
+          {
+            "id": "bea7000a1f2bc75e",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Chemie/Physikalische_Chemie/VU_Festkörper/Skript_Lukas/Chapter 10 Dielectric function of the free electron gas.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Chapter 10 Dielectric function of the free electron gas"
+            }
+          },
+          {
+            "id": "f37a2febe6e7fc5f",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Chemie/Physikalische_Chemie/VU_Festkörper/Skript_Lukas/Addition to the nearly free energy model.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Addition to the nearly free energy model"
+            }
+          }
+        ],
+        "currentTab": 6
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "81ad4a57d717582d",
+    "type": "split",
+    "children": [
+      {
+        "id": "ac331c985992915a",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "c557af46454dd452",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Dateiexplorer"
+            }
+          },
+          {
+            "id": "abbb1e4871c52d06",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Suchen"
+            }
+          },
+          {
+            "id": "f558d57991abf0cf",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Lesezeichen"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "635e6bd2927d61a8",
+    "type": "split",
+    "children": [
+      {
+        "id": "149daee9f1770929",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "6461da7b50848e38",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Chemie/Physikalische_Chemie/Seminar/X-Ray Diffraction.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Rückverweise für X-Ray Diffraction"
+            }
+          },
+          {
+            "id": "d11badea0e85e244",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Chemie/Physikalische_Chemie/Seminar/X-Ray Diffraction.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Ausgehende Links von X-Ray Diffraction öffnen"
+            }
+          },
+          {
+            "id": "c1387156edc04f2e",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "545c63614d020352",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Chemie/Physikalische_Chemie/Seminar/X-Ray Diffraction.md"
+              },
+              "icon": "lucide-list",
+              "title": "Gliederung von X-Ray Diffraction"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Schnellauswahl öffnen": false,
+      "graph:Graphen-Ansicht öffnen": false,
+      "canvas:Neuen Canvas erstellen": false,
+      "daily-notes:Heutige Notiz öffnen": false,
+      "templates:Vorlage einfügen": false,
+      "command-palette:Befehlspalette öffnen": false
+    }
+  },
+  "active": "f37a2febe6e7fc5f",
+  "lastOpenFiles": [
+    "Mathe/Algebra 1/Proseminar/Blatt 9/A09.pdf",
+    "Mathe/Algebra 1/Proseminar/Blatt 9",
+    "Mathe/Algebra 1/Proseminar/Neuer Ordner",
+    "Tutorium Mathe/Tutorium6_Slides.pptx",
+    "Tutorium Mathe/~$Tutorium6_Slides.pptx",
+    "Tutorium Mathe/~$Tutorium5_Slides.pptx",
+    "atta/Pasted image 20241201115052.png",
+    "Chemie/Physikalische_Chemie/VU_Festkörper/Skript_Lukas/Alternative Description Free Electron Model.md",
+    "Chemie/Physikalische_Chemie/VU_Festkörper/Skript_Lukas/Addition to the nearly free energy model.md",
+    "atta/Pasted image 20241201114521.png",
+    "atta/Pasted image 20241201114411.png",
+    "atta/Pasted image 20241201114317.png",
+    "atta/Pasted image 20241201114207.png",
+    "atta/Pasted image 20241201113836.png",
+    "atta/Pasted image 20241201113811.png",
+    "atta/Pasted image 20241201113603.png",
+    "atta/Pasted image 20241201112310.png",
+    "Chemie/Physikalische_Chemie/VU_Festkörper/Skript_Lukas/Chapter 6 Heat capacity.md",
+    "Chemie/Physikalische_Chemie/VU_Festkörper/Skript_Lukas/Chapter 5 Phonons.md",
+    "Chemie/Physikalische_Chemie/VU_Festkörper/Skript_Lukas/Chapter 11 Semiconductors.md",
+    "Chemie/Physikalische_Chemie/VU_Festkörper/Skript_Lukas/Revision Crystal Systems X-Ray.md",
+    "Chemie/Physikalische_Chemie/VU_Festkörper/Skript_Lukas/Chapter 4 Crystal Binding.md",
+    "atta/Pasted image 20241201103215.png",
+    "Chemie/Physikalische_Chemie/VU_Festkörper/Skript_Lukas/Chapter 2 Reciprocal Lattice.md",
+    "Chemie/Physikalische_Chemie/VU_Festkörper/Skript_Lukas/Chapter 1 Crystal Systems.md",
+    "Chemie/Physikalische_Chemie/VU_Festkörper/Skript_Lukas/Chapter 10 Dielectric function of the free electron gas.md",
+    "Chemie/Physikalische_Chemie/VU_Festkörper/Skript_Lukas/Chapter 9 Energy Bands.md",
+    "Chemie/Physikalische_Chemie/VU_Festkörper/Skript_Lukas/Chapter 8 Free Electron Fermi Gas.md",
+    "Chemie/Physikalische_Chemie/VU_Festkörper/Skript_Lukas/Chapter 7 Anharmonic Crystal Interactions.md",
+    "Chemie/Physikalische_Chemie/VU_Festkörper/Skript_Lukas/Chapter 6 Heat capacity.pdf",
+    "atta",
+    "Chemie/Physikalische_Chemie/VU_Festkörper/Skript_Lukas",
+    "attachments",
+    "Chemie/Physikalische_Chemie/VU_Festkörper/Mitschriften/Chapter 6 Heat Capacity.md",
+    "Chemie/Physikalische_Chemie/VU_Festkörper/Mitschriften/VO_2_Meinschad.md",
+    "MD-Part.md",
+    "Chemie/TC/Praktikum_FF",
+    "Chemie/Physikalische_Chemie/Seminar/X-Ray Diffraction.md"
+  ]
+}

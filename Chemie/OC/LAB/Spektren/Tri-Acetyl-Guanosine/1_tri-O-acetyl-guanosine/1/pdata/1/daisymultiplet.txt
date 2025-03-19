@@ -1,0 +1,19 @@
+# 2025-03-12 15:59:06 +0100 lukas@MacBookPro.uibk.ac.at
+# TOPSPIN Daisy Multiplet Table
+# /Users/lukas/Desktop/Studium/Chemie/OC/LAB/Spektren/Tri-Acetyl-Guanosine/1_tri-O-acetyl-guanosine/1/pdata/1
+
+1D TopSPIN Multiplet Table
+
+----------------------------------------------------------------------
+Number    Shift [ppm]    J [Hz]    M         Connection     Identifier
+----------------------------------------------------------------------
+----------------------------------------------------------------------
+
+
+
+1D TopSPIN Multiplet Lines Table
+
+--------------------------
+Number      Position [ppm]
+--------------------------
+--------------------------

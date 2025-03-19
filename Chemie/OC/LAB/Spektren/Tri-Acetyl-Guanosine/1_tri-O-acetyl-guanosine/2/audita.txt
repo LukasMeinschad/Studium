@@ -1,0 +1,26 @@
+##TITLE= Audit trail, TopSpin 4.5.0
+##JCAMPDX= 5.01
+##ORIGIN= Bruker BioSpin GmbH & Co. KG
+##OWNER= root
+$$ /root/.topspin-BladeEpu/local_acqu/AKP-OCPF-LP16-1_full/2/audita.txt
+##AUDIT TRAIL=  $$ (NUMBER, WHEN, WHO, WHERE, PROCESS, VERSION, WHAT)
+(   1,<2025-03-07T08:09:24.990+0000>,<UIBK\c7261113>,<PC172-C726>,<go4>,<TopSpin 4.5.0>,
+      <acquisition in progress>)
+$$ Z:/nmr400-ac/data/csat7142/nmr/AKP-OCPF-LP16-1_full/2/audita.txt
+(   2,<2025-03-07T08:33:03.469+0000>,<UIBK\c7261113>,<PC172-C726>,<go4>,<TopSpin 4.5.0>,
+      <created by zg on 'Avance NEO' (PC172-C726) by user 'UIBK\c7261113'
+       on data set with UUID 'c8c7974d-09b0-4f8b-9bae-57e01e836d8f'
+       started at 2025-03-07 08:09:24.990 +0000, POWCHK enabled, PULCHK disabled,
+       completed at 2025-03-07 08:33:03.468 +0000
+       configuration hash MD5:
+       D4 10 EC 6E BA 4A D6 BC 57 1B E8 5A 89 59 8E FA
+       double data hash MD5: 1K * 160
+       EA 41 27 A1 CB 3E 58 DF 0F 68 7A AC CD E7 59 92>)
+(   3,<2025-03-07T09:33:04.343+0100>,<UIBK\c7261113>,<pc172-c726>,<xwish3>,<TopSpin 4.5.0>,
+      <ICON-NMR User ID: csat7142
+       double data hash MD5: 1K * 160
+       EA 41 27 A1 CB 3E 58 DF 0F 68 7A AC CD E7 59 92>)
+##END=
+
+$$ hash MD5
+$$ E3 55 00 83 83 A9 8F 28 19 35 0E 42 DC 70 A4 A4

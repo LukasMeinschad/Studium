@@ -1,0 +1,159 @@
+\documentclass{report}
+
+\input{preamble}
+\input{macros}
+\input{letterfonts}
+
+% Get rid of this stupid intend
+\setlength\parindent{0pt}
+
+
+\title{\Huge{Vorbereitung Übungsklausur Mathe II für Chemiker}}
+\author{\huge{Lukas Meinschad}}
+\date{}
+
+\begin{document}
+
+\maketitle
+\newpage% or \cleardoublepage
+% \pdfbookmark[<level>]{<title>}{<dest>}
+\pdfbookmark[section]{\contentsname}{toc}
+\pagebreak
+
+
+\section{Reihen und Konvergenz} % (fold)
+\label{sec:reihen_und_konvergenz}
+
+Nun nochmal einige Aufgaben zur Konvergenz und Divergenz von Reihen. Vorher die wichtigsten Kriterien nochmal zusammengefasst.
+
+\nt{
+    Eine Reihe $\sum_{k=1}^\infty a_k$ heißt absolut konvergent falls $\sum_{k=1}^\infty |a_k|$ konvergiert
+
+    Es gilt  \textbf{Absolut Konvergent} $\implies$ \textbf{normale Konvergenz}
+}
+
+\nt{
+    \textbf{Leibniz-Kriterium} Wenn eine Reihe die Form $\sum_{k=1}^{\infty} (-1)^k b_k$ hat und $(b_k)_{k \in \NN}$ eine nichtnegative monoton fallende Nullfolge ist dann konvergiert die Reihe
+}
+
+\nt{
+    \textbf{Majorantenkriterium} Sei $|a_k| \leq b_k, \forall k \in \NN$. Wann $\sum_{k=1}^\infty b_k$ konvergiert dann konvergiert die Reihe $\sum_{k=1}^\infty a_k$ absolut
+}
+
+\nt{
+    \textbf{Quotientenkriterium} Ist $\sum_{k=1}^\infty$ eine Reihe mit $a_k \neq 0, \forall k \in \NN$. Gibt es ein $\theta > 1$ und ein $N \in \NN$ sodass $|\frac{a_{k+1}}{a_k}| \leq \theta$ für alle $k \geq N$ gilt dann ist die Reihe absolut konvergent. \emph{Bestimmt wird dies durch bilden des entsprechenden Grenzwertes}  
+}
+
+\nt{
+    \textbf{Wurzelkriterium} Wenn $limsup_{k \to \infty} \sqrt[k]{|a_k|} < 1$ dann ist die Reihe $\sum_{k=1}^\infty  a_k $ absolut konvergent
+}
+
+\nt{
+    \textbf{Klassiker für Divergenz} Wenn $(a_k)_{k\in \NN}$ divergiert oder $lim_{k\to \infty} a_k \neq 0$ gilt dann ist die Reihe divergent
+}
+\nt{
+\textbf{Minorantenkriterium} Sei $a_k \geq c_k \geq 0$. Wenn  $\sum_{k=1}^\infty c_k$ divergiert, dann divergiert auch die Reihe $\sum_{k=1}^\infty a_k$}
+
+Hier nochmals einige Übungsaufgaben zu den Reihen
+\begin{align}
+    \sum_{k=1}^\infty \frac{(k^k)^2}{k^{k^2}} \\
+    \sum_{k=1}^\infty \frac{(k!)^2}{(2k)!} \\
+    \sum_{k=1}^\infty \frac{k}{1+k^2} \\
+    \sum_{k=1}^\infty ( \frac{k}{k+1})^k \\
+    \sum_{k=1}^\infty ( \frac{k}{k+1})^{k^2} \\
+    \sum_{k=1}^\infty (-1)^k (\sqrt{k+1} - \sqrt{k})
+\end{align}
+
+
+% section reihen_und_konvergenz (end)
+
+\section{Potenzreihen und Konvergenzradius} % (fold)
+\label{sec:potenzreihen_und_konvergenzradius}
+
+
+\dfn{Potenzreihe}{
+    Sei $(a_k)_{k \in \NN}$ eine reelle oder komplexe Folge und $x_0 \in \RR$ eine Abbildung der Form
+
+    \begin{equation}
+        x \to \sum_{k=0}^\infty a_k (x -x_0)^k
+    \end{equation}
+    heißt Potenzreihe
+}
+
+\dfn{Konvergenzradius}{
+    Die Zahl $r:= lim_{k \to \infty} \frac{1}{\sqrt[k]{|a_k|}}$ bzw $r:= lim_{k\to \infty}| \frac{a_k}{a_{k+1}}$ heißt Konvergenzradius der Potenzreihe
+    }
+
+    Bestimme den Konvergenzradius der Folgenden Potenzreihen
+
+    \begin{align}
+        \sum_{k=0}^\infty \frac{k+1}{2^k}x^k \\
+        \sum_{k=1}^\infty \frac{(1+x)^{2k}}{(2+\frac{1}{k})^k} \\
+        \sum_{k=0}^\infty \frac{3^{k+2}}{2^k}x^k
+    \end{align}
+
+\section{Taylorreihe} % (fold)
+\label{sec:taylorreihe}
+
+\dfn{Taylorreihe}{
+    Eine Taylorreihe einer reellen oder komplexwertigen Funktion $f(x)$ welche ist die Potenzreihe
+
+     \begin{equation}
+         f(a) + \frac{f'(a)}{1!}(x-a) + \frac{f''(a)}{2!}(x-a)^2 + ... = \sum_{n=0}^\infty \frac{f^{(n)}(a)}{n!}(x-a)^n
+    \end{equation}
+}
+
+Bestimme jeweils das Taylor Polynom vom Grad 2 für die folgenden Funktionen
+
+\begin{align}
+    f(x) = cos(2x) ~ \text{mit} ~ a = \pi \\
+    f(x) = sin(2x) ~ \text{mit} ~ a= \frac{\pi}{2} \\
+    f(x) = ln(x) ~ \text{mit} ~ a =1 \\
+    f(x) = e^x ~\text{mit} ~a = 1
+\end{align}
+
+% section taylorreihe (end)
+% section potenzreihen_und_konvergenzradius (end)
+
+
+\section{Diverse Aufgaben zum Integrieren} % (fold)
+\label{sec:diverse_aufgaben_zum_integrieren}
+
+Hierzu findet ihr im \textbf{Olat} bereits einen eigenen Übungszettel. Wir besprechen jetzt noch die \emph{DI-Methode} welche recht praktisch ist wenn es um das bestimmen der Partiellen Ableitung geht. 
+
+Am besten könnt ihr euch dazu dieses Video anschauen \href{https://www.youtube.com/watch?v=2I-_SV8cwsw&t=684s}{blackpenredpen-integration-by-parts}.
+
+Wir lösen damit diese Aufgaben:
+
+\begin{equation}
+    \int x^2 \sin(3x)dx 
+\end{equation}
+
+\begin{equation}
+  \int   x^4 \ln(x)dx
+\end{equation}
+
+\begin{equation}
+   \int  e^x sin(x)dx
+\end{equation}
+
+
+Weiteres hier noch eine Auswahl an klassischen Integralen
+
+\begin{align}
+    \int 3x^2 - \frac{1}{2}x + 1 dx \\
+    \int e^{(4x)}dx \\
+    \int 3x \cos(x^2) dx \\
+    \int \frac{2x}{x^2 + 1}dx \\
+    \int x ln(x) dx \\
+    \int x^2 e^x dx \\ 
+    \int sin^2(x) dx \\
+    \int x^2 ln(x) dx \\
+    \int \frac{x}{(x^2 + 1)^2}dx dx 
+\end{align}
+
+
+% section diverse_aufgaben_zum_integrieren (end)
+
+
+\end{document}

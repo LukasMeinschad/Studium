@@ -1,0 +1,16 @@
+\contentsline {section}{\numberline {0.1}Körpertheorie}{2}{section.0.1}%
+\contentsline {subsection}{\numberline {0.1.1}Normale und separable Erweiterungen}{2}{subsection.0.1.1}%
+\contentsline {subsection}{\numberline {0.1.2}Galoistheorie}{3}{subsection.0.1.2}%
+\contentsline {subsection}{\numberline {0.1.3}Unlösbarkeit von Polynomialen Gleichungen}{6}{subsection.0.1.3}%
+\contentsline {section}{\numberline {0.2}Moduln}{7}{section.0.2}%
+\contentsline {subsection}{\numberline {0.2.1}Grundlagen}{7}{subsection.0.2.1}%
+\contentsline {subsection}{\numberline {0.2.2}Tensorprodukt}{10}{subsection.0.2.2}%
+\contentsline {subsection}{\numberline {0.2.3}Ganze Ringerweiterungen und Hilberts Nullstellensatz}{12}{subsection.0.2.3}%
+\contentsline {section}{\numberline {0.3}Cyclotromic Polynomials}{14}{section.0.3}%
+\contentsline {section}{\numberline {0.4}Quaterionen}{14}{section.0.4}%
+\contentsline {section}{\numberline {0.5}Algebren}{15}{section.0.5}%
+\contentsline {section}{\numberline {0.6}Kodierungstheorie}{16}{section.0.6}%
+\contentsline {section}{\numberline {0.7}Kryptographie}{18}{section.0.7}%
+\contentsline {section}{\numberline {0.8}Kategorientheorie}{19}{section.0.8}%
+\contentsline {section}{\numberline {0.9}Garbentheorie}{21}{section.0.9}%
+\contentsfinish 

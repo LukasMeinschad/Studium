@@ -1,0 +1,14 @@
+\contentsline {section}{\numberline {0.1}Nichtlineare Gleichungsysteme}{2}{section.0.1}%
+\contentsline {subsection}{\numberline {0.1.1}Fixpunktiteration}{2}{subsection.0.1.1}%
+\contentsline {subsection}{\numberline {0.1.2}Newtonverfahren}{3}{subsection.0.1.2}%
+\contentsline {section}{\numberline {0.2}Lineare Regression}{5}{section.0.2}%
+\contentsline {subsection}{\numberline {0.2.1}Methode der kleinsten Fehlerquadrate}{5}{subsection.0.2.1}%
+\contentsline {subsection}{\numberline {0.2.2}QR-Zerlegung}{6}{subsection.0.2.2}%
+\contentsline {section}{\numberline {0.3}Nichtlineare Regression}{8}{section.0.3}%
+\contentsline {subsection}{\numberline {0.3.1}Das Gauß-Newton-Verfahren}{8}{subsection.0.3.1}%
+\contentsline {section}{\numberline {0.4}Differentialgleichungen}{9}{section.0.4}%
+\contentsline {subsection}{\numberline {0.4.1}Einschrittverfahren}{10}{subsection.0.4.1}%
+\contentsline {subsection}{\numberline {0.4.2}Konvergenz von Einschrittverfahren}{11}{subsection.0.4.2}%
+\contentsline {section}{\numberline {0.5}Eigenwertprobleme}{13}{section.0.5}%
+\contentsline {subsection}{\numberline {0.5.1}Kondition des Eigenwertproblems}{13}{subsection.0.5.1}%
+\contentsfinish 

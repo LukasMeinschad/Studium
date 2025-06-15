@@ -1,0 +1,810 @@
+\documentclass{report}
+
+\input{preamble}
+\input{macros}
+\input{letterfonts}
+
+% Get rid of this stupid intend
+\setlength\parindent{0pt}
+
+
+\title{\Huge{Numerik 2}}
+\author{\huge{Lukas Meinschad}}
+\date{}
+
+\begin{document}
+
+\maketitle
+\newpage% or \cleardoublepage
+% \pdfbookmark[<level>]{<title>}{<dest>}
+\pdfbookmark[section]{\contentsname}{toc}
+\tableofcontents
+\pagebreak
+
+\section{Nichtlineare Gleichungsysteme} % (fold)
+\label{sec:nichtlineare_gleichungsysteme}
+
+In diesem Abschnitt betrachtet man das Problem
+
+\begin{align}
+    f_1(x_1,...,x_n) = 0 \\
+    ... \\
+    f_n(x_1,...x_n) = 0
+\end{align}
+Ein quadratischer System von $n$ nichtlinearen Gleichungen in $n$ Unbekannten. Die Funktionen sind auf $D \subset \RR^n$ definiert. Man verwendet die kompakte Schreibweise
+
+\begin{equation}
+    x := \begin{pmatrix} x_1 \\ ... \\ x_N \end{pmatrix} \in \RR^n, f:= \begin{pmatrix} f_1 \\ ... \\ f_n \end{pmatrix}: D \to \RR^n: x \to f(x) = \begin{pmatrix} f_1(x_1,...,x_n) \\ ... \\  f_n(x_1,...x_n) \end{pmatrix}
+\end{equation}
+
+Im Gegensatz zu linearen GLeichungsystemen weiß man über die Existenz und Eindeutigkeit von Lösungen nichtlinearer Gleichungsysteme wenig.
+
+\subsection{Fixpunktiteration} % (fold)
+\label{sub:fixpunktiteration}
+
+Der Fixpunktsatz welchen man in Analysis 2 gelernt hat ist eines der wichtigsten Hilfsmittel der nichtlinearen Analysis. 
+
+\dfn{Fixpunkt \& lipschitz-stetig}{
+    \begin{itemize}
+      \item Sei $\Phi: D \subset \RR^n \to \RR^n:$. Ein Punkt $a \in D$ heißt Fixpunkt von $\Phi$ wann $\Phi(a)= a$
+      \item Sei $\Phi: D \subset \RR^n \to \RR^n$. Die Funktion  $\Phi$ heißt Lipschitz-stetig, falls es eine Lipschitz-Konstante $L \geq 0$ auf $D: \leftrightarrow$ für alle $x,\hat{x} \in D$ gilt $|| \Phi(x) - \Phi (\hat{x})|| \leq L ||x - \hat{x} ||$
+    \end{itemize}
+}
+
+\thm{Fixpunktsatz von Banach}{
+    Sei $\emptyset \neq D \subset R^n$ abgeschlossen und $\Phi: D \to \RR^n$ mit den Eigenschaften:
+    \begin{itemize}
+      \item $\Phi$ ist eine Selbstabbildung $\Phi(D) \subset D$ 
+          \item $\Phi$ ist eine Kontraktion es gibt Lipschitz Konstante $K<1$
+    \end{itemize}
+    Dann besitzt $\Phi$ genau einen Fixpunkt $a \in D$. Die Fixpunktiteration 
+
+     \begin{equation}
+         x^{(k+1)} = \Phi(x^{(k)})
+    \end{equation}
+ konvergiert gegen diesen Wert insbesondere gilt die Fehlerabschätzung
+
+ \begin{equation}
+     || x^{(k)} - a || \leq \frac{K}{K-1}||x^{(k)} - x^{(k-1)}||
+ \end{equation}
+}
+
+\thm{Lokales Resultat}{
+    Oft muss man gar nicht alle Bedingungen den Fixpunktsatzes überprüfen es reicht beispielsweise:
+
+    Sei $a \in \RR^n$ ein Fixpunkt von $\Phi$ also $a = \Phi(a)$. Falls $\Phi$ in einer Umgebung von $a$ zwei mal stetig differenziebar ist, gilt für den Fehler $e^{(k)} = x^{(k)}-a$ der Fixpunktiteration $x^{(k+1)} = \Phi(x^{(k)})$ die Rekursion 
+
+    \begin{equation}
+    e^{(k+1)} = \Phi'(a)e^{(k)} + O(||e^{(k)}||^2)
+    \end{equation}
+
+}
+\pf{}{Man betrachtet die Taylorreihenentwicklung:
+
+\begin{align}
+    e^{(k+1)} = x^{(k+1)} - a = \Phi(x^{(k)}) - \Phi(a) \\
+    = \Phi'(a) (x^{k}-a) + \int_0^1 (1-\tau)\Phi''(a + \tau(x^{k}-a))(x^{k}-a,x^{k}-a)d \tau \\
+= \Phi'(a)(x^{(k)}-a) + O(||e^{(k)}||^2)
+\end{align}}
+
+
+\subsection{Newtonverfahren} % (fold)
+\label{sub:newtonverfahren}
+
+Das Newtonverfahren ist eines der wichtigsten Verfahren zur Bestimmung von nullstellen glatter Funktionen.
+
+Man betrachtet das Problem $f(x) = 0$ und fordert eine höhere Glattheit von $f$. Man bezeichnet die Jacobimatrix von $f=[f_1,...,f_n]^T$ kurz durch
+
+\begin{equation}
+    f'(x) = \begin{pmatrix} \frac{\partial f_1}{\partial x_1} (x) & ... & \frac{\partial f_1}{\partial x_n}(x) \\
+        ... & ... & ... \\
+        \frac{\partial f_n}{\partial x_1}(x) & ... & \frac{\partial f_n}{\partial x_n}(x)
+    \end{pmatrix}
+    \end{equation}
+
+Der Satz von der impliziten Funktion ist ein wichtiger Satz und gibt uns ein Kriterium ob ein Gleichungsystem $F(x,y)= 0$ welches implizit eine Funktion $y = f(x)$ definiert. Anders formuliert gibt er uns eine Möglichkeit zu Bestimmen obeine implizite Gleichung lokal aufgelöst werden kann.
+
+\thm{Satz über inverse Funktionen}{
+    Sei $D \subset \RR^n$ offen: $f: D \to R^n$ stetig differenzierbar und $x^* \in D$ mit $f(x^*) =0$ und $det f'(x) \neq 0$ Dann lässt sich die FUnktion $f$ für $x$ nahe bei $x^*$ eindeutig umkehren. Es gibt also ein $g = f^{-1}$ sodass 
+
+    \begin{equation}
+        f(x) = w \Leftrightarrow x = g(w)
+    \end{equation}
+    Insbesondere gilt $x^*=g(0)$. \emph{Die Nullstelle ist lokal eindeutig.}
+}
+
+
+\textbf{Motivation hinter dem Newtonverfahren:} Man betrachtet eine Taylor Approximation an der Nullstelle.
+
+\begin{equation}
+    0 = f(x^*) = f(x^{(0)}) + f'(x^{(0)})\cdot(x^* - x^{(0)})
+\end{equation}
+
+\dfn{Newtonverfahren}{
+    Man erhält im $\RR^n$ das Newtonverfahren:
+
+    \begin{align}
+        x^{(0)} ~ beliebig \\
+        \Delta x^{(k)} - [f'(x^{(k)})]^{-1}f(x^{(k)}) \\
+        x^{(k+1)} = x^{(k)} + \Delta x^{(k)}
+    \end{align}
+
+    Das Inkrement erhält man durch Lösung des linearen Gleichungsystems:
+
+    \begin{equation}
+        f'(x^{(k)})\Delta x^{(k)} = -f(x^{k})
+    \end{equation}
+
+    Man bricht die Iteration ab sobalt $||\Delta x|| \leq tol$ gilt.
+}
+
+Wir besprechen kurz Algorithmen zu Berechnung der Jacobimatrix $f'(x)$
+
+ \begin{itemize}
+  \item Analytisch zb mit \textbf{maple} ist nur möglich falls $f$ analytisch bekannt ist. Prozess ist Fehleranfällig. Bei falscher Jacobimatrix verliert man die Quadratische Konvergenz des Verfahrens.
+      \item Numerisch: Man berechnet die Jacobimatrix mit Hilfe von finiten Differenzen. Hierzu benötigt man pro Schritt $n$ zusätzliche Funktionsauswertungen!
+\end{itemize}
+
+\textbf{Finite Difference Approximation for Derivatives}
+
+The derivative $f'(x)$ of a function $f(x)$ at a point $x =a$ is defined as
+
+\begin{equation}
+    f'(a) =  \lim_{x \to a} \frac{f(x) - f(a)}{x-a}
+\end{equation}
+
+\textbf{Forward Differences:} Approximates the slope of the function using the line that connects $(x_j, f(x_j))$ and $(x_{j+1},f(x_{j+1}))$
+
+ \begin{equation}
+     f'(x_j) = \frac{f(x_{j+1}) - f(x_j)}{x_{j+1} - x_j}
+\end{equation}
+
+\textbf{Backward Differecnes:} Approximatesa the slope of the function using the line that connects $x_{j-1},f(x_{j-1})$ and $(x_j, f(x_{j}))$
+
+ \begin{equation}
+     f'(x_j) = \frac{f(x_j) - f(x_{j-1})}{x_j - x_{j-1}}
+\end{equation}
+
+\textbf{Central Differences} Estimates the slope of the function at $x_j$ using the line that connects $(x_{j-1}, f(x_{j-1}))$ and  $f(x_{j+1},f(x_{j+1}))$
+
+ \begin{equation}
+     f'(x_j) = \frac{f(x_{j+1})-f(x_{j-1})}{x_{j+1}-x_{j-1}}
+\end{equation}
+
+\dfn{Vereinfachtes Newtonverfahren}{
+    Um Arbeit zu sparen verwendet man manchmal eine grobe Approximation der Jacobimatrix. Im Allgemeinen verliert man hier die quadratische Konvergenz. Wichtigster Fall ist das man immer die Jacobimatrix vom Anfang verwendet das bring uns zum vereinfachten Newtonverfahren:
+
+    \begin{align}
+        x^{(0)} ~ beliebig \\
+        f'(x^{0})\cdot \Delta x^{(k)} = -f(x^{(k)}) \\
+        x^{(k+1)} = x^{(k)} + \Delta x^{(k)}
+    \end{align}
+    Springender Unterschied man Berechnet die Jacobimatrix nur einmal und spart somit Zeit
+}
+
+\nt{
+    Um die Konvergenz des vereinfachten Newtonverfahren zu studieren betrachtet man
+
+    \begin{equation}
+        \Phi(x):= x - [f'(x^{(0)})]^{-1}f(x)
+    \end{equation}
+    Es sind die Fixpunkte von $\Phi$ gerade die Nullstellen von $f$. Man bestimmt die Ableitung von $\Phi$ nach $x$ 
+
+    \begin{equation}
+        \Phi'(x) = I - [f'(x^{0})]^{-1}f'(x)
+    \end{equation}
+    
+    An der Stelle $x^*$ hat man
+
+     \begin{equation}
+         \Phi'(x^*) = [f'(x^{0})]^{-1}(f'(x^{0})-f'(x^*)) = O(||x^{0}-x^*)
+    \end{equation}
+    man erhält lokale lineare Konvergenz
+}
+
+\section{Lineare Regression} % (fold)
+\label{sec:lineare_regression}
+
+\subsection{Methode der kleinsten Fehlerquadrate} % (fold)
+\label{sub:methode_der_kleinsten_fehlerquadrate}
+
+\ex{Bremsweg}{Fahrzeugt bremst von der Geschwindigkeit $v$ auf den Stillstand ab. Man wählt als modell einen quadratischen Zusammenhang zwischen der Anfangsgeschwindigkeit $v$ und Länge des Bremsweges $w$ 
+    \begin{equation}
+        w = w(v) = \alpha + \beta v + \gamma v^2
+    \end{equation}
+
+    \textbf{Vorgangsweise nach Gauss:} Man macht $m \geq 3$ Versuche wo man zu vorgegebener Geschwindigkeit den Bremsweg messen man erhält Wertepaare und berechnet den Unterschied zwischen berechneten und gemessenen Bremsweg
+
+    \begin{equation}
+        |w(v_i) - w_i| = |\alpha + \beta v_i  + \gamma v_i^2 - w_i|
+    \end{equation}
+
+    Um die Parameter zu Bestimmen minimieren wir die Summe der Fehlerquadrate
+
+    \begin{equation}
+        \sum_{i=1}^{m}(w(v_i) - w_i)^2 \to min!
+    \end{equation}
+}
+
+Notwendige Bedingung für ein Extremum von $f$ ist das der Gradient verschwindet
+
+\begin{equation}
+    grad f = [\frac{\partial f}{\partial \alpha}, \frac{\partial f}{\partial \beta}, \frac{\partial f}{\partial \gamma}]^T = 0
+\end{equation}
+
+ist die Hessematrix hier zusätzlich positiv definit so liegt ein Minimum vor.
+
+\[
+H(f) =
+\begin{bmatrix}
+\frac{\partial^2 f}{\partial x^2} & \frac{\partial^2 f}{\partial x \partial y} & \frac{\partial^2 f}{\partial x \partial z} \\
+\frac{\partial^2 f}{\partial y \partial x} & \frac{\partial^2 f}{\partial y^2} & \frac{\partial^2 f}{\partial y \partial z} \\
+\frac{\partial^2 f}{\partial z \partial x} & \frac{\partial^2 f}{\partial z \partial y} & \frac{\partial^2 f}{\partial z^2}
+\end{bmatrix}
+\]
+
+\textbf{Quadratische Minimierungsaufgabe}
+
+Man kann das Beispiel zum Bremsweg auch in ein Gleichungsystem umformen
+
+\begin{align}
+    w(v) = \alpha + \beta v + \gamma v^2 \\
+    w(_i)  - w_i = \alpha + \beta v_i + \gamma v_i - w_i = [1 ~ v_i ~ v_i]^2 \begin{pmatrix} \alpha \\ \beta \\ \gamma \\ \end{pmatrix}- w_i
+\end{align}
+
+Insbesondere gibt sich für die Minimierungsfunktion folgende äquivalente Charakterierung:
+
+\begin{equation}
+    f(x) = \sum_{i=1}{m}(w(v_i)- w_i)^2) = ||Ax - b||_2^2 \to min!
+\end{equation}
+
+Formuliert man dies aus so erhält man
+
+\begin{equation}
+    f(x) = x^T A^TAx - 2x^T A^T b + b^t b
+\end{equation}
+
+und den Gradienten $grad f(x) = 2A^TAx - 2A^Tb$.
+
+\dfn{Normalengleichung}{
+    DIe GLeichungen $A^TAx = A^Tb$ liefern eine notwendige Bedingung des Regressionsproblems und heißen \emph{Normalengleichungen}
+}
+
+\dfn{Lineare Regression mit Allgemeiner Modellfunktion}{
+
+Man wählt eine beliebige lineare Funktion in $v$
+
+\begin{equation}
+    w(v) = x_1g_1(v) + x_2g_2(v) + ... + x_ng_n(v)
+\end{equation}
+
+und hat  $m$ Messdaten
+
+\begin{equation}
+    (v_1,w_1), (v_2, w_2) ,..., (v_m,w_m)
+\end{equation}
+
+Man erhält Matrix $A$ und einen Vektor $b$ 
+
+\begin{equation}
+    A = \begin{pmatrix} g_1(v_1) & ... & g_n(v_1) \\ ... & ... & ... \\ g_1(v_m) & ... & g_n(v_m) \end{pmatrix}, b = \begin{pmatrix} w_1 \\ ... \\ w_n \end{pmatrix}
+\end{equation}
+
+Und löst die Minimierungsaufgabe
+
+\begin{equation}
+    f(x) = \sum_{i=1}^m (w(v_i) - w_i)^2 \to min
+\end{equation}
+
+was auf die Normalengleichungen $A^TAx = A^Tb$ führt. Hat $A$ maximalen Rang so ist $A^TA$ invertierbar und man hat eine eindeutige Lösung
+}
+
+\subsection{QR-Zerlegung} % (fold)
+\label{sub:qR_zerlegung}
+
+Ein numerischer Nachteil der Normalengleichungen besteht darin dass die Kondition des Problems quadriert wird. Ausweg bietet hier die \textbf{QR-Zerlegung}
+
+Eine orthogonale Matrix $Q$ erfüllt die beziehung $Q^T = Q^{-1}$
+
+
+
+\dfn{QR-Zerlegung}{
+
+\textbf{Fall Quadratische Matrix:} Jede reelle quadratische Matrix $A$ kann Zerlegt werden $A=QR$ mit $Q$ orthogonal und $R$ obere Dreiecksmatrix. Ist $A$ invertierbar so ist die Faktorisierung eindeutig wenn die Diagonalelemente von $R$ positiv sind.
+
+\textbf{Fall Rechteckige Matrix:} Eine $m \times n$ Matrix $A$ mit $m \geq n$kann man in eine Produkt aus $Q$ unitären Matrizen und  $R$ oberen Dreiecksmatrizen zerlegen
+
+\begin{equation}
+    A = QR = Q \begin{pmatrix} R_1 \\ 0 \end{pmatrix} = [Q_1, Q_2] \begin{pmatrix} R_1 \\ 0 \end{pmatrix} = Q_1R_1
+\end{equation}
+}
+
+\textbf{QR-Decomposition using Householder Reflections:}
+
+A Householder reflection is a transformation that takes a vector and reflects it about some plane or hyperplane. We can use this operation to calculate the $QR$-factorization of any $m \times n$ matrix $A$ 
+
+Let $x$ be an arbitrary $m$ dimensional column vector of $A$ such that $||x|| = | \alpha |$ for a scalar $\alpha$. In the case of floating point arithmetic define $\alpha = -sgn(x_k)(||x||)$.
+Then when $e_1$ is the vector $[1,0,...0]^T$, $||*||$ is the euclidian norm and $I$ is a $m \times m$ Identiy matrix set
+
+\begin{align}
+    u = x - \alpha e_1 \\
+    v = \frac{u}{||u||} \\
+    Q = I-2vv^T
+\end{align}
+
+$Q$ is a $m \times m$ Householder Matrix which is both symmetric and orthogonal and:
+
+ \begin{equation}
+     Qx = \begin{pmatrix} \alpha \\ 0 \\ ... \\ 0 \end{pmatrix}
+\end{equation}
+
+This can be used to gruadually transform an $m \times n$ matrix $A$ into the upper triangular form. We first multiply $A$ with the Householder Matrix $Q_1A$ and eliminate the first row
+
+\begin{equation}
+    Q_1 A = \begin{pmatrix} \alpha_1 & * & ... & * \\ 0 & * & ... & * \\ & & A' &  \end{pmatrix}
+\end{equation}
+
+This process can be repeated for $A'$ resulting in the Householder matrix $Q'_2$ we need to further expand the upper left filling in the identy matrix
+
+\begin{equation}
+    Q_k = \begin{pmatrix} I_{k-1} & 0 \\ 0 & Q_k' \end{pmatrix}
+\end{equation}
+
+After $t$ iterations $R = Q_t \cdot\cdot \cdot Q_2 Q_1 A$ and $Q = Q_1^T Q_2^T \cdot Q_t^T$. Finally we can talk about the costs of this method:
+
+\begin{itemize}
+  \item Multiplications $2(n-k+1)^2$ 
+      \item Additions $n-k+1)^2 + (n-k+1)(n-k) + 2$ 
+           \item Divisions 1 
+               \item Square Root $1$
+\end{itemize}
+
+Which sums up to the complexity $\frac{2}{3}n^3 + n^2 + \frac{1}{3}n-2 = O(n^3)$
+
+\textbf{QR-Decomposition using Gram-Schmidt Process}
+
+Here one applies the Gram-Schmidt-Process to the columns of the matrix $A$. 
+
+Let $A = [a_1 | a_2| ... |a_n]$ and $||*||$ denote the $L2$ norm. We begin to set $u_1 = a_1$ and first of normalize
+
+\begin{equation}
+    u_1 = a_1, e_1 = \frac{u_1}{||u_1||}
+\end{equation}
+
+Then we orthogonalize to compute $u_2$
+
+ \begin{equation}
+    u_2 = a_2 - (a_2 \cdot e_1)e_1, e_2 = \frac{u_2}{||u_2||}
+\end{equation}
+
+Thus for $k=2,...,n-1$ we construct
+
+\begin{equation}
+    u_{k+1} = a_{k+1} - (a_{k+1}\cdot e_1)e_1 - ... - (a_{k+1}e_k)e_k, e_{k+1} = \frac{u_{k+1}}{||u_{k+1}||}
+\end{equation}
+
+This constructs a decomposition:
+
+\begin{align}
+    Q= [a_1 | a_2 |... |q_n] = [e_1 | e_2 | ... | e_n] \\
+    R = \begin{pmatrix} a_1 e_1 & a_2 e_1 & ... & a_n e_1 \\
+         0 & a_2 e_2 & ... & a_n e_2 \\
+         ... & ... & ...& ... & \\
+     0 & 0 & ... & a_n e_n \end{pmatrix}
+\end{align}
+
+
+\section{Nichtlineare Regression} % (fold)
+\label{sec:nichtlineare_regression}
+
+In diesem Kapitel betrachtet man ein überbestimmtes nichtlinearer Gleichungsystem
+
+\begin{equation}
+    f(x) = f(x_1,...,x_n) = 0 \in \RR^m 
+\end{equation}
+
+mit mehr Gleichungen als Unbekannten also:
+
+\begin{equation}
+    f: D \subset \RR^n \to \RR^m , m \geq n
+\end{equation}
+
+\subsection{Das Gauß-Newton-Verfahren} % (fold)
+\label{sub:das_gauß_newton_verfahren}
+
+
+Wie im linearen Fall modifizieren wir das Problem und suchen $x$ so dass $f(x)$ möglichst klein ist:
+
+\begin{equation}
+    g(x) = ||f(x)||_2^2 = f(x)^Tf(x) = \sum_{j=1}^m f_j(x)^2 \in \RR
+\end{equation}
+
+Man betrachtet das neue Problem
+
+\begin{equation}
+    g: \RR^n \to R, g(x) \to min!
+\end{equation}
+
+Wiederum ist eine notwendige Bedingung für ein Minimum von $g$ gerade $grad g = 0$. Man erhält durch das betrachten der partiellen Ableitungen:
+
+\begin{equation}
+    \frac{\partial g}{\partial x_l}= \sum_{j=1}^m 2f_j(x) \frac{\partial f_j(x)}{\partial x_l}= 2f(x)^T[f'(x)]_{-,l} = 0 ~ 1 \leq l \leq n
+\end{equation}
+
+Somit insbesondere $f(x)^Tf'(x) = [0,...,0]$ durch Transponieren erhält man eine notwendige Bedingung  $f'(x)^Tf(x)= 0$ auf die man das Newton-Verfahren anwenden kann.
+
+
+\dfn{Gauß-Newton-Verfahren}{
+    Das Gauß-Newton Verfahren löst Probleme bei denen das Minimum einer Summe von Quadraten stetig differenzierbarer Funktionen $f_i: \RR^n \to \RR$ gesucht ist sprich
+
+    \begin{equation}
+        min_{x \in \RR^n} \{ \frac{1}{2} \sum_{i=1}^m (f_i(x))^2 \}
+    \end{equation}
+
+    Mit der euklidischen Norm hat man die Form
+
+    \begin{equation}
+        min_{x \in \RR^n} \{ \frac{1}{2}||f(x)||^2 \}
+    \end{equation}
+
+    mit $f=(f_1,...,f_m): \RR^n \to \RR^m$ dies kommt in der Praxis häufig vor, insbesondere ist das nichtlineare Prolem $f(x)=0$ äquivalent zur Minimierung von  $\frac{1}{2}||f(x)||^2$
+
+    \textbf{Algorithmus:}
+
+    Grundidee ist ine Linearisierung von $f$ im Punkt $x^0 \in \RR^n$ 
+
+     \begin{equation}
+         \bar{f}(x) = f(x^0) + \nabla f(x^0)^T(x-x^0)
+    \end{equation}
+
+    Die Matrix $\nabla f(x^0)^T$ ist hier die Jacobimatrix man erhält das lineare kleinste Fehlerquadrat Problem:
+
+    \begin{equation}
+        min_{x \in \RR^n} \{ \frac{1}{2}||\bar{f}(x)||^2 = \frac{1}{2}||J(x-x^0) + f(x^0)||^2 \}
+    \end{equation}
+
+    Nullsetzen des Gradienten liefert wieder die Normalengleichungen
+
+    \begin{equation}
+        J^TJ(x-x^0) = -J^Tf(x^0)
+    \end{equation}
+
+    Mit der expliziten Lösung  $x=x^0 - (J^TJ)^{-1}J^Tf(x^0)$
+
+    Damit hat man den  \textbf{Gauß-Newton Iterationsschritt:}
+
+    \begin{equation}
+        x^{k+1} = x^k - \alpha^k(J(x^k)^T J(x_k))^{-1} (J(x_k))^Tf(x^k)
+    \end{equation}
+
+    wobei $\alpha^k \geq 0$ die Schrittweite ist.
+}
+
+\section{Differentialgleichungen} % (fold)
+\label{sec:differentialgleichungen}
+
+\textbf{Problemstellung:} gesucht ist hier die Lösung der Anfangswertaufgabe 
+
+\begin{equation}
+    y' = f(x,y), ~ y(x_0) = y_0
+\end{equation}
+
+auf dem Intervall $I = [x_0,\bar{x}]$. Man sucht also eine stetig differenzierbare Funktion $y:[x_0,\bar{x}] \to \RR^m$ mit 
+
+\begin{equation}
+    y'(x) = f(x,y(x))
+\end{equation}
+
+für alle $x \in I=[x_0, \bar{x}],y(x_0)=y_0$
+
+\nt{\textbf{Transformation in ein System 1.Ordnung:}
+
+    Ein System von Differentialgleichungen $k$-ter Ordnung
+
+    \begin{equation}
+        y^{(k)} = f(x,y,y',...,y^{(k-1)}), y(x_0) = a_0, y'(x_0) = a_1, ...
+    \end{equation}
+
+    Lässt sich in ein System 1. Ordnung überführen dafür fürht man eine neue Variable $y^{(l)}$ ein
+
+     \begin{align}
+        y_1 = y \to y'_1 = y_2 \\
+        y_2 = y' \to y_1' = y_3 \\
+        ... \\
+        y_k = y^{(k-1)} \to y'_k= f(x,y_1,...,y_k)
+    \end{align}
+
+    Damit in Vektorschreibweise:
+    \begin{align}
+        Y:= \begin{pmatrix} y_1 \\ ... \\ y_k \end{pmatrix},  F(x,Y) = \begin{pmatrix} y_2 \\ ... \\ y_k \\ f(x,y_1,...,y_k)  \end{pmatrix} \\
+        Y' = F(x,Y), Y(x_0) = \begin{pmatrix} a_0 \\ ... \\ a_{k-1} \end{pmatrix}
+    \end{align}
+}
+
+\subsection{Einschrittverfahren} % (fold)
+\label{sub:einschrittverfahren}
+
+Wir suchen nun eine numerische Approximation für die Lösung der Differentialgleichung
+
+\begin{equation}
+    y' = f(x,y), y(x_0)= y_0
+\end{equation}
+
+auf $[x_0, \bar{x}]$. Dazu unterteilt man das Intervall in  $N$ (nicht notwenigerweise) äquidistante Teilintervalle
+
+\begin{equation}
+    x_0 < x_1 < ... < x_N = \bar{x}
+\end{equation}
+
+Jeweils mit den Schrittweiten $h_n = x_{n+1}-x_n$. Man bestimmt nun  $y_n$ aus dem vorhergehenden Schritt
+
+\begin{equation}
+    y_{n+1} = y_n + h_n \Phi(h_n,x_n,y_n)
+\end{equation}
+
+Mit einer entsprechend gewählten Funktion $\Phi$. So eine Formel heißt \textbf{Einschrittverfahren}. Es genügt jeweils die Angabe des ersten Schritts der Rest ist Rekursion wir erhalten die Schreibweise:
+
+\begin{equation}
+    y_1 = y_0 + h \Phi(h,x_0,y_0)
+\end{equation}
+
+\textbf{Explizite Runge-Kutta-Verfahren:}
+
+Das einfachste Runge-Kutta-Verfahren ist das Eulerverfahren mit $\Phi(h,x,y) = f(x,y)$:
+
+ \begin{equation}
+    y_1 = y_0 + hf(x_0,y_0) \approx y(x_0 + h)
+\end{equation}
+
+Den Fehler in einen Schritt erhält man mit dem Vergleich der Entwicklungen der numerischen und exakten Lösung in ein Taylorpolynom
+
+\begin{equation}
+    y(x_0 + h) = y(x_0) + hy'(x_0) + O(h^2)
+\end{equation}
+
+Substrahiert man dies so ergibt sich $y_1 - y(x_0 + h)= O(h^2)$. Wie kann man also nun das Verfahren verbessern?
+
+Man betrachtet die Volterra'sche Integralgleichung 2.Art 
+
+ \begin{equation}
+     y(x_0 + h) = y(x_0) + \int_{x_0}^{x_0 + h} f(\xi, y(\xi))d\xi
+\end{equation}
+
+Nun geht es darum das Integral auf der linken Seite zu Approximieren. \emph{Beim Gauss-Verfahren veerwendet man hier die linke Rechtecksregel also $f(\xi, y(\xi))= f(x_0, y(x_0))$}
+
+\textbf{Verfahren von Runge (1895):} Man verwendet die Mittelpunktsregel anstatt der linken Rechtecksregel
+
+\begin{equation}
+    y(x_0 + h ) = y(x_0) + hf(x_0 + \frac{h}{2}, y(x_0 + \frac{h}{2})) + O(h^3)
+\end{equation}
+
+Problem ist die unbekannte Lösung $y(x0 + \frac{h}{2})$ welche man durch einen Eulerschritt approximiert:
+
+\begin{equation}
+    y(x_0 + \frac{h}{2}) \approx y_0 + \frac{h}{2}f(x_0,y_0) \to y_1 = y_0 + hf(x_0 + \frac{h}{2}, y_0 + \frac{h}{2}f(x_0,y_0))
+\end{equation}
+
+\dfn{Explicit Runge-Kutta-Methods}{
+    The family of Runge-Kutta Methods are given by the formula:
+
+    \begin{equation}
+        y_{n+1} = y_n + h \sum_{i=1}^s b_ik_i
+    \end{equation}
+
+    where 
+
+    \begin{align}
+        k_1 = f(t_n,y_n) \\
+        k_2 = f(t_n + c_2h, y_n + (a_{21}k1)h) \\
+        k_3 = f(t_n + c_3h, y_n + (a_{31}k_1 + a_{32}k_2)h) \\
+        ... \\
+        k_2 = f(t_n + c_sh, y_n + (a_{s1}k_1 + a_{s2}k_2 + ... + a_{s,s-1}k_{s-1})h)
+    \end{align}
+
+    To specify a Runge-Kutta Method we have to provide the integer $s$ the number of stages and the coefficients $a_{ij}, b_i$ this data is normally arranged in a butcher tableau
+
+    \[
+\begin{array}{ccccc}
+0 \\
+c_2 & a_{21} \\
+c_3 & a_{31} & a_{32} \\
+\vdots & \vdots & & \ddots \\
+c_s & a_{s1} & a_{s2} & \cdots & a_{s,s-1} \\ \hline
+& b_1 & b_2 & \cdots & b_s \\
+\end{array}
+\]}
+
+\dfn{Ordnung der Runge-Kutta-Methode}{
+    Ein Runge-Kutta Verfahren besitzt Ordnung $p$ falls gilt: Für jede Anfangswertaufgabe $y'= f(x,y),y(x_0)=y_0$ einer p mal stetig differenzierbaren Funktion $f$ gilt für den lokalen Fehler
+
+    \begin{equation}
+        y_1 - y(x_0 + h) = O(h^{p+1})
+    \end{equation}
+
+}
+
+\subsection{Konvergenz von Einschrittverfahren} % (fold)
+\label{sub:konvergenz_von_einschrittverfahren}
+
+Wir betrachten wieder die Anfangswertaufgabe 
+
+\begin{equation}
+    y' = f(x,y), y(x_0) = y_0
+\end{equation}
+
+auf $[x_0, \bar{x}]$ und das Einschrittverfahren
+
+ \begin{equation}
+     y_{n+1} = y_n + h_n \Phi(h_n,x_n,y_n)
+\end{equation}
+mit der Unterteilung $x_0< x_1< ... < x_N = \bar{x}, h_n = x_{n+1}-x_n$
+
+\thm{Globaler Fehler des Enschrittverfahrens}{
+Sei $y(x)$ die exakte Lösung des Anfangswertproblems und es gelte:
+
+\begin{itemize}
+    \item Der lokale Fehler des Verfahrens erfülle für $x \in [x_0, \bar{x}]$ und  $0 < h \leq \bar{h}$: 
+        $||y(x+h) - y(x) - h \Phi(h,x,y(x))|| \leq K h^{p+1}$ (Verfahren hat Ordnung p)
+    \item $\Phi$ erfüllt eine Lipschitzbedingung $||\Phi(h,x,y) - \Phi(h,x,z)|| \leq \Lambda ||y-z||$ mit  $0 < hz \leq \bar{h}$ und  $x \in [x_0, \bar{x}]$ sowie  $||y - y(x)|| \leq b, ||z-y(x)|| \leq b$
+\end{itemize}
+
+Dann erfüllt der \textbf{globale Fehler} für alle $x_n \in [x_0, \bar{x}]$ die Abschätzung
+
+ \begin{equation}
+     ||y_n - y(x_n)|| \leq h^p \frac{K}{\Lambda}(e^{\Lambda(x_n - x_0)}-1)
+\end{equation}
+
+mit $h = max h_j \leq \bar{h}$
+}
+
+Wendet man dies auf das Runge Kutta-Verfahren:
+
+\begin{equation}
+    \Phi(h,x,y) = \sum_{i=1}^s b_i k_i(y)
+\end{equation}
+
+wobei hier $k_i(y) = f(x + c_i h, y + h\sum_{j=1}^{i-1}a_{ij}k_j(y))$ gilt.
+
+\mlemma{}{Erfüllt $f$ eine Lipschitzbedingung 
+\begin{equation}
+    ||f(x,y) - f(x,z)|| \leq L||y-z||
+\end{equation}
+In einem $b$-Schlauch um die Lösung von $y'=f(x,y)$ dann erfüllt $\Phi$ die Vorraussetzung des Theorems
+
+\begin{equation}
+    \Lambda = L(\sum_{i=1}^s |b_i| + \bar{h}L \sum_{i=2}^2 \sum_{j=1}^{i-1}|b_ia_{ij}|+ .. + (\bar{h}L)^{s-1}|b_sa_{s,s-1} ... a_{21})
+\end{equation}
+} 
+\pf{}{
+    Man betrachtet 
+
+    \begin{align}
+        ||k_1(y) - k_1(z)|| = ||f(x,y) - f(x,z)|| \leq L ||y  z|| \\
+        ||k_2(y) - k_2(z)\\ \leq L|| y - z + h_{21}(k_1(y)- k_1(z))|| \leq L(1+  \bar{h} ||a_{21}|L)||y - z||
+    \end{align}
+
+    Damit erhält man schließlich
+
+    \begin{equation}
+        ||\Phi(h,x,y) - \Phi(h,x,z)|| \leq \sum_{i=1}^s |b_i|||k_i(y) - k_i(z)||
+    \end{equation}
+}
+
+\section{Eigenwertprobleme} % (fold)
+\label{sec:eigenwertprobleme}
+
+Sei $A$ eine $n \times n$ Matrix mit Koeffizienten $\RR oder \mathbb{C}$ wir betrachten das Eigenwertproblem:
+
+\begin{equation}
+    Av = \lambda v, \lambda \in \mathbb{C}, 0 \neq v \in \mathbb{C}^n
+\end{equation}
+
+Es sind die gesuchten Eigenwerte $\lambda$ die Nullstellen des charakteristischen Polynoms
+
+\begin{equation}
+    \chi_A(\lambda) = det(A- \lambda I) = (-1)^n \prod_{i=1}^k(\lambda-\lambda_i)^{m_i}
+\end{equation}
+wobei $m_i$ die algebraische Vielfachheit des Eigenwertes ist es gilt $m_1+...+m_k = n$
+
+\textbf{Verallgemeinertes Eigenwertproblem:} In vielen Bereichen zb der Mechanik tritt ein verallgemeinertes Eigenwertproblem auf:
+
+\begin{equation}
+    Av = \lambda B v
+\end{equation}
+dabei ist $n \times n$ Matrix $B$ oft symmetrisch positiv definit und besitzt die Cholesky-Zerlegung  $B= LL^T$ nun folgt
+
+\begin{align}
+    AL^{-T}L^T v = \lambda LL^Tv \\
+    L^{-1}AL^{-T}w = \lambda w, w:= L^T v
+\end{align}
+
+\subsection{Kondition des Eigenwertproblems} % (fold)
+\label{sub:kondition_des_eigenwertproblems}
+
+Befassen wir uns mit der Frage wie sich die Eigenwerte einer Matrix ändern, wenn man die Elemente der Matrix leicht stört. Man betrachtet dazu die gestöre Matrix
+
+\begin{equation}
+    A(\epsilon) = A + \epsilon C, |\epsilon| << 1, |c_{ij}|\leq |a_{ij}|
+\end{equation}
+
+\thm{Stetige Abhängigkeit der Eigenwerte einer Matrix}{
+    Sei $A$ eine $n \times n$ Matrix mit Eigenwerten $\lambda_i, (1 \leq i \leq k)$ weiteres sei $\rho > 0$ so gewählt das die Kreisscheiben $D_i = \{ \lambda \in \mathbb{C}|~ |\lambda - \lambda_i| \leq \rho \}$ paarweise disjunkt sind sprich $D_i \cap D_j = \emptyset$ für  $i \neq j$. Dann befinden sich für $|\epsilon|$ klein genug genau $m_i$ Eigenwerte der Matrix $A + \epsilon C$ in der Kreisschreibe $D_i$ f+r $1 \leq 1 \leq k$
+}
+
+\thm{Analytische Abhängigkeit der Eigenwerte}{
+    Sei $\lambda_1$ eine einfache Nullstelle von $\chi_A(\lambda)$und $|\epsilon|$ klein genug.
+
+    Dann besitzt die Matrix $A + \epsilon C$ einen einfachen Eigenwert $\lambda_1(\epsilon)$ nahe bei $\lambda_1$. Die Funktion $\lambda_1(\epsilon)$ ist analytisch in einer Umgebung von $\epsilon = 0$ und es gilt:
+
+    \begin{equation}
+        \lambda_1(\epsilon) = \lambda_1 + \epsilon \frac{u_1^* C v_1}{u_1^* v_1} + O(\epsilon^2)
+    \end{equation}
+
+    Man bezeichnet $v_1$ einen Rechtseigenvektor von $A$ zu $\lambda_1$ d.h $A v_1 = \lambda_1 v_1$ und $u_1^*$ einen Linkseigenvektor $u_1^* A = \lambda u_1^*$
+}
+
+\textbf{Folergungen:}
+
+
+Normale Matrizen $A^*A = AA^*$ sind unitär diagonalisierbar $\exists V$ unitär, $(V^* = V^{-1})$ mit $V^*AV = diag(\lambda_1, ...,\lambda_n)$. Zu einen einfache Eigenwert  $\lambda_1$ einer normalen Matrix $A$ sind die Eigenvektoren $v_1$ und $u_1$ daher kollinear und:
+
+
+
+\begin{equation}
+    |u_1^* Cv_1| = |\langle u_1, Cv_1 \rangle | \leq || u_1||\cdot ||C||\cdot ||v_1||
+\end{equation}
+
+hat man die Abschätzung $|\lambda_1(\epsilon) - \lambda_1| \leq \epsilon ||C|| + O(\epsilon^2)$ damit ist die Berechnung eines einfachen Eigenwerts einer normalen Matrix sehr gut konditioniert.
+
+
+\thm{Gerschgorin}{
+
+    Sei $A = (a_{jj})$ eine $n \times n$ Matrix und $\lambda$ ein Eigenwert von $A$. Dann exestiert ein Index $i$ mit
+
+     \begin{equation}
+         |\lambda - a_{ii}| \leq \sum_{j\neq i}|a_{ij}|
+    \end{equation}
+
+    Das heißt die Eigenwerte von $A$ liegen in der Vereinigung der Kreisscheiben:
+
+    \begin{equation}
+        D_i = \{ \mu \in \mathbb{C} | ~|\mu - a_{ii}| \leq \sum_{j\neq i} |a_{ij}| \}
+    \end{equation}
+}
+
+\pf{}{Sei $v \neq 0$ ein Eigenvektor zum Eigenwert $\lambda$ und sei der Index $i$ so gewählt das $|v_i| \geq |v_j|$ für alle $j$. Dann gilt wegen
+
+    \begin{equation}
+        \sum_{j} a_{ij}v_j = \lambda v_i
+    \end{equation}
+
+    die GLeichung 
+    
+     \begin{equation}
+         (\lambda - a_{ii}) v_i = \sum_{j \neq i} a_{ij}v_j
+    \end{equation}
+
+    Anwendung der Dreiecksungleichung und Division durch $|v_i|$ ergibt das gewünschte Resultat
+
+    \begin{equation}
+        |\lambda - a_{ii}| \leq \sum_{j\neq i} |a_{ij}| | \frac{v_j}{v_i}| \leq \sum_{j\neq i}|a_{ij}|
+    \end{equation}
+}
+
+% subsection kondition_des_eigenwertproblems (end)
+
+% section eigenwertprobleme (end)
+
+
+% subsection konvergenz_von_einschrittverfahren (end)
+% subsection einschrittverfahren (end)
+
+
+% section differentialgleichungen (end)
+
+% subsection das_gauß_newton_verfahren (end)
+
+
+% section nichtlineare_regression (end)
+
+\end{document}
